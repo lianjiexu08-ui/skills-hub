@@ -1,0 +1,14 @@
+{
+  "name": "skills-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "团队自维护的 Agent Skill 库，供 Goal-Guided Brain 能力中心安装",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "check": "node scripts/validate.mjs --check"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

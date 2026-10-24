@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/validate.mjs",
+  "installUrlTemplate": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/<id>",
+  "skills": [
+    {
+      "id": "bug-fix",
+      "name": "bug-fix",
+      "title": "缺陷修复",
+      "description": "系统化排查并修复缺陷。当出现报错、崩溃、异常、测试失败、功能不工作、行为不符合预期时使用。先复现定位，生成按副作用排序的修复方案，逐个尝试成功即停，最后回归验证。",
+      "path": "skills/bug-fix/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/bug-fix"
+    },
+    {
+      "id": "change-impact",
+      "name": "change-impact",
+      "title": "变更影响分析",
+      "description": "在修改代码前评估影响面与回归范围。当需要判断改动会波及哪些模块、是否破坏公共接口、要不要通知其他成员、哪些测试必须重跑时使用；也用于拆分大改动、评估风险等级。",
+      "path": "skills/change-impact/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/change-impact"
+    },
+    {
+      "id": "code-review",
+      "name": "code-review",
+      "title": "代码审查",
+      "description": "审查代码改动，发现问题并给出分级建议。当需要审查 diff、复核提交、检查有没有问题、PR 评审、修完后再看一遍，或涉及安全/并发/数据库/公共 API 等高风险改动时使用。",
+      "path": "skills/code-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/code-review"
+    },
+    {
+      "id": "engineering-workflow",
+      "name": "engineering-workflow",
+      "title": "工程交付流程",
+      "description": "工程交付五步法：需求理解、方案设计、代码实现、代码审查、缺陷修复。当需要实现功能、修改代码、交付可验证结果，或不知道从哪一步开始时使用；也用于判断当前任务处在哪一步、下一步该做什么。",
+      "path": "skills/engineering-workflow/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/engineering-workflow"
+    },
+    {
+      "id": "project-map",
+      "name": "project-map",
+      "title": "项目地图",
+      "description": "在动手前快速理解一个陌生或大型项目，生成精简的项目地图并共享给团队。当需要理解项目结构、上手新仓库、定位入口与测试命令、为团队建立项目共识、冷启动一个任务时使用。",
+      "path": "skills/project-map/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/project-map"
+    },
+    {
+      "id": "task-orchestration",
+      "name": "task-orchestration",
+      "title": "任务编排",
+      "description": "结构化地协调多个执行者完成一个目标：拆分任务、建立依赖、分派、跟踪进度、处理阻塞与升级。当需要把大目标拆成可并行/有序的子任务、等待他人产出、处理失败重试、或判断何时该升级给人工时使用。",
+      "path": "skills/task-orchestration/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/task-orchestration"
+    },
+    {
+      "id": "verification-gate",
+      "name": "verification-gate",
+      "title": "验证门禁",
+      "description": "在交付前自动探测项目类型并运行对应验证（测试、类型检查、lint、构建），把结果作为可检查的证据。当需要确认改动是否可交付、跑一遍检查、判断任务是否真的完成、为交付补充验证证据时使用。",
+      "path": "skills/verification-gate/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/verification-gate"
+    }
+  ]
+}

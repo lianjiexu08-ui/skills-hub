@@ -1,6 +1,7 @@
 ---
 name: requirement-analysis
 description: 把模糊想法澄清成可验收的需求。当需求不清楚、验收标准缺失、用户只说"做个 X"、或需要在动手前确认范围与边界时使用。产出目标、范围、验收标准和待确认问题。
+category: product
 ---
 
 # 需求澄清

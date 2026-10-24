@@ -1,6 +1,7 @@
 ---
 name: api-contract
 description: 设计或修改对外接口契约。当新增接口、修改请求/响应格式、调整错误码、或需要保证向后兼容时使用。产出明确的输入输出约定与兼容策略。
+category: engineering
 ---
 
 # 接口契约

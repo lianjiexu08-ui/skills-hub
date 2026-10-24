@@ -1,6 +1,7 @@
 ---
 name: flaky-test
 description: 诊断和修复不稳定的测试。当测试时过时不过、只在 CI 失败、并行时失败、或需要判断是否该隔离某个用例时使用。
+category: quality
 ---
 
 # 不稳定测试

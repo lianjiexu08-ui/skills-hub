@@ -1,6 +1,7 @@
 ---
 name: secret-handling
 description: 在代码与工作流中安全处理凭据。当需要接入 API 密钥、配置令牌、排查密钥泄漏、或审查日志与错误输出时使用。
+category: security
 ---
 
 # 凭据处理

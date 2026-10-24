@@ -25,85 +25,45 @@ docs/skill-schema.md         SKILL.md 编写规范
 
 ## 已有 Skill
 
-### 流程主线
+共 **200** 个，覆盖 19 个领域。完整清单见 [`catalog.json`](./catalog.json)（含每个 Skill 的 ID、标题、描述、分类与直装地址）。
 
-| ID | 名称 | 用途 |
+| 领域 | 分类键 | 数量 |
 | --- | --- | --- |
-| `engineering-workflow` | 工程交付流程 | 需求理解 → 方案设计 → 实现 → 审查 → 修复 |
+| 运维与云 | `operations` | 17 |
+| 工程开发 | `engineering` | 14 |
+| 数据分析 | `data` | 13 |
+| 设计与前端 | `design` | 13 |
+| 项目与协作 | `collaboration` | 13 |
+| 数据与 AI 工程 | `ai` | 12 |
+| 文档与写作 | `writing` | 12 |
+| 内容与媒体 | `content` | 12 |
+| 测试与质量 | `quality` | 11 |
+| 产品 | `product` | 11 |
+| 安全与合规 | `security` | 10 |
+| 研究与信息 | `research` | 10 |
+| 个人效率 | `personal` | 10 |
+| 自动化与集成 | `automation` | 8 |
+| 教学与学习 | `learning` | 8 |
+| 商业与运营 | `business` | 8 |
+| 移动与桌面 | `mobile` | 7 |
+| 财务 | `finance` | 6 |
+| 法务与行政 | `legal` | 5 |
 
-### 需求与设计
+### 按需查找
 
-| ID | 名称 | 用途 |
-| --- | --- | --- |
-| `requirement-analysis` | 需求澄清 | 把模糊想法变成可验收的需求与范围边界 |
-| `technical-design` | 技术方案设计 | 模块划分、数据流、接口契约与关键权衡 |
-| `api-contract` | 接口契约 | 输入输出约定、错误码与向后兼容策略 |
-| `adr` | 架构决策记录 | 记录影响长期结构的选择与代价 |
-| `change-impact` | 变更影响分析 | 改动前评估影响面与回归范围 |
+```bash
+# 本地查看全部
+node -e "const c=require('./catalog.json');for(const s of c.skills)console.log(s.category.padEnd(15),s.id.padEnd(28),s.title)"
 
-### 实现与质量
+# 按分类过滤
+node -e "const c=require('./catalog.json');for(const s of c.skills.filter(x=>x.category==='data'))console.log(s.id,s.title)"
+```
 
-| ID | 名称 | 用途 |
-| --- | --- | --- |
-| `code-review` | 代码审查 | 取证、预检门禁、分级审查报告 |
-| `bug-fix` | 缺陷修复 | 复现定位、多方案排序、成功即停 |
-| `refactor-safely` | 安全重构 | 行为不变前提下的小步重构 |
-| `test-design` | 测试设计 | 覆盖正常、边界、错误与回归点 |
-| `flaky-test` | 不稳定测试 | 分类定位并让测试确定化，不靠重试 |
-| `verification-gate` | 验证门禁 | 探测项目类型并跑测试/类型检查/lint/构建 |
-| `dependency-audit` | 依赖评估 | 引入、升级、移除依赖的判断依据 |
-| `tech-debt-triage` | 技术债分级 | 只记录有代价的债，按影响×频率排序 |
+安装任意一个：
 
-### 安全与性能
-
-| ID | 名称 | 用途 |
-| --- | --- | --- |
-| `security-review` | 安全审查 | 输入、执行、授权、凭据、网络风险 |
-| `secret-handling` | 凭据处理 | 密钥存放、脱敏输出、泄漏处置 |
-| `performance-review` | 性能审查 | 先测量再优化，定位 N+1、内存、并发 |
-| `data-migration` | 数据迁移 | 分阶段、幂等、可回滚的结构变更 |
-
-### 运维与故障
-
-| ID | 名称 | 用途 |
-| --- | --- | --- |
-| `observability` | 可观测性 | 日志、指标、追踪与告警设计 |
-| `incident-response` | 故障响应 | 先止血再定位，保留证据与复盘 |
-| `ci-pipeline` | 持续集成 | 阶段设计、可复现性、本地/CI 差异排查 |
-| `config-management` | 配置管理 | 优先级、启动校验、默认值安全 |
-| `integration-debugging` | 集成排查 | 按层排除外部 API/认证/回调问题 |
-| `browser-debugging` | 前端排查 | 控制台 → 网络 → 状态 → 样式 |
-
-### 交付与协作
-
-| ID | 名称 | 用途 |
-| --- | --- | --- |
-| `release-readiness` | 发布就绪检查 | 变更、证据、兼容、回滚的发布前核对 |
-| `pr-description` | 变更说明 | 让审查者快速理解改了什么与为什么 |
-| `handoff-note` | 交接说明 | 让下一个人无需追问就能接着干 |
-| `task-orchestration` | 任务编排 | 交接 vs 受控分派、依赖、决策门、升级 |
-| `issue-tracker-workflow` | 工单驱动的工作流 | 读工单、状态流转、未确认写入 |
-| `context-management` | 长任务上下文 | 外部化状态、压缩前摘要、恢复交接 |
-| `codebase-qa` | 代码问答 | 基于真实代码回答，给出位置证据 |
-| `project-map` | 项目地图 | 三步阅读法建立可共享的项目认知 |
-
-### 环境与界面自动化
-
-| ID | 名称 | 用途 |
-| --- | --- | --- |
-| `disposable-workspace` | 一次性执行环境 | 三阶段快照、认证隔离、用完即弃 |
-| `worktree-isolation` | 工作树隔离 | 并行改动互不污染，基线选择与清理 |
-| `terminal-session` | 终端会话驱动 | 就绪等待、句柄失效、长输出分页 |
-| `ui-automation` | 界面自动化 | 可访问性树、语义动作、状态确认 |
-| `device-automation` | 设备自动化 | 归一化坐标、点按优先、设备清理 |
-| `accessibility-review` | 可访问性检查 | 语义结构、键盘可达、ARIA 纪律 |
-
-### 对外动作与元技能
-
-| ID | 名称 | 用途 |
-| --- | --- | --- |
-| `external-publishing` | 对外发布 | 默认关闭、显式授权、可撤销与脱敏 |
-| `skill-authoring` | 编写 Skill | 新增或重构 Skill 的规范与自检 |
+```text
+https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/<id>
+```
 
 ## 维护方式
 

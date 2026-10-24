@@ -1,6 +1,7 @@
 ---
 name: terminal-session
 description: 可靠地驱动终端里的交互式会话（REPL、TUI 工具、长期运行的命令）。当需要向终端发送输入、等待程序就绪、读取长输出、或处理会话句柄失效时使用。
+category: engineering
 ---
 
 # 终端会话驱动

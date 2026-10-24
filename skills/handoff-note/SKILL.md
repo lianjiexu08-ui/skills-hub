@@ -1,6 +1,7 @@
 ---
 name: handoff-note
 description: 编写任务交接说明，让别人或下一个执行者能接着干。当需要中断任务、转交他人、跨团队协作、或恢复一个中断的执行时使用。
+category: collaboration
 ---
 
 # 交接说明

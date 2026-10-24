@@ -1,6 +1,7 @@
 ---
 name: accessibility-review
 description: 检查并改进界面可访问性。当需要支持键盘操作、屏幕阅读器、表单可用性，或做无障碍合规检查时使用。
+category: design
 ---
 
 # 可访问性检查

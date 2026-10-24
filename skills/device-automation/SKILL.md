@@ -1,6 +1,7 @@
 ---
 name: device-automation
 description: 自动化移动设备或模拟器做功能验证。当需要点击、滑动、输入、安装应用、授予权限、截图或读取界面结构来验证移动端行为时使用。
+category: mobile
 ---
 
 # 设备自动化

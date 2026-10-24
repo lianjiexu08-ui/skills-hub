@@ -1,6 +1,7 @@
 ---
 name: pr-description
 description: 撰写变更说明或合并请求描述。当需要为一次改动写 PR 描述、提交说明、交付说明，或让审查者快速理解改了什么与为什么时使用。
+category: collaboration
 ---
 
 # 变更说明

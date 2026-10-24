@@ -1,6 +1,7 @@
 ---
 name: skill-authoring
 description: 编写或修改 Agent Skill。当需要新增 Skill、重构已有 Skill、判断一个流程是否适合写成 Skill、或统一 Skill 写法时使用。
+category: ai
 ---
 
 # 编写 Skill

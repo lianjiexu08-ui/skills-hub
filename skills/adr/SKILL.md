@@ -1,6 +1,7 @@
 ---
 name: adr
 description: 记录架构决策（ADR）。当做出影响长期结构的选择、需要在多个方案间定夺、或要让后来者理解决策背景时使用。产出可追溯的决策记录。
+category: engineering
 ---
 
 # 架构决策记录

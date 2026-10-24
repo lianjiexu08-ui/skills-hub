@@ -1,6 +1,7 @@
 ---
 name: data-migration
 description: 安全地变更数据库结构或迁移数据。当需要加字段、改类型、拆表、回填数据、清理旧数据，或评估迁移的回滚与兼容性时使用。
+category: data
 ---
 
 # 数据迁移

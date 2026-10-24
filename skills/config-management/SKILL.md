@@ -1,6 +1,7 @@
 ---
 name: config-management
 description: 管理应用配置与环境变量。当新增配置项、排查"某环境行为不同"、处理默认值与密钥、或需要保证配置错误时快速失败时使用。
+category: operations
 ---
 
 # 配置管理

@@ -1,6 +1,7 @@
 ---
 name: engineering-workflow
 description: 工程交付五步法：需求理解、方案设计、代码实现、代码审查、缺陷修复。当需要实现功能、修改代码、交付可验证结果，或不知道从哪一步开始时使用；也用于判断当前任务处在哪一步、下一步该做什么。
+category: engineering
 ---
 
 # 工程交付流程

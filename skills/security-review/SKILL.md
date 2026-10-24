@@ -1,6 +1,7 @@
 ---
 name: security-review
 description: 审查代码的安全风险。当改动涉及认证授权、用户输入、文件与命令执行、外部请求、密钥处理、数据存储，或做发布前安全检查时使用。
+category: security
 ---
 
 # 安全审查

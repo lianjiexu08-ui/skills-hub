@@ -1,6 +1,7 @@
 ---
 name: performance-review
 description: 审查并改进代码性能。当出现响应慢、内存增长、批量操作变慢、数据库压力大，或改动涉及循环查询、大文件处理、并发时使用。
+category: engineering
 ---
 
 # 性能审查

@@ -1,6 +1,7 @@
 ---
 name: technical-design
 description: 基于需求设计可落地的技术方案。当需求已清楚、需要确定模块划分、数据流、接口契约与关键权衡时使用；也用于比较多个方案、评估改动范围。
+category: engineering
 ---
 
 # 技术方案设计

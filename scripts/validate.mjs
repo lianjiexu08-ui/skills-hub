@@ -103,6 +103,7 @@ for (const name of fs.readdirSync(skillsDir).sort()) {
     name: data.name,
     title: heading ? heading.replace(/^#\s+/, '').trim() : name,
     description: String(data.description).replace(/\s+/g, ' ').trim(),
+    category: typeof data.category === 'string' && data.category.trim() ? data.category.trim() : 'general',
     path: `skills/${name}/SKILL.md`,
     installUrl: `https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/${name}`,
   });
@@ -110,10 +111,14 @@ for (const name of fs.readdirSync(skillsDir).sort()) {
 
 if (entries.length === 0) fail('skills/ 下没有任何可用 Skill');
 
+const categories = {};
+for (const entry of entries) categories[entry.category] = (categories[entry.category] || 0) + 1;
 const catalog = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedBy: 'scripts/validate.mjs',
   installUrlTemplate: 'https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/<id>',
+  total: entries.length,
+  categories,
   skills: entries,
 };
 

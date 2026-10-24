@@ -1,6 +1,7 @@
 ---
 name: browser-debugging
 description: 排查前端页面问题（白屏、报错、请求失败、样式错乱、状态不对）。当需要复现前端 bug、定位是网络/脚本/样式/状态哪一层的问题时使用。
+category: design
 ---
 
 # 前端问题排查

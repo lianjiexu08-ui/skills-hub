@@ -1,6 +1,7 @@
 ---
 name: release-readiness
 description: 发布前的交付检查。当准备合并、发版、上线，或需要确认"是否真的可以交付"时使用。核对变更范围、验证证据、兼容性、回滚方案与风险。
+category: operations
 ---
 
 # 发布就绪检查

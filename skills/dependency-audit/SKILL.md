@@ -1,6 +1,7 @@
 ---
 name: dependency-audit
 description: 评估引入、升级或移除依赖。当需要新增第三方库、升级版本、处理安全公告、或判断能否用现有代码替代时使用。
+category: engineering
 ---
 
 # 依赖评估

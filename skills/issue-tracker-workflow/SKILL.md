@@ -1,6 +1,7 @@
 ---
 name: issue-tracker-workflow
 description: 围绕工单/任务卡系统开展工作。当任务关联了工单、需要读取工单上下文、更新状态、写完成说明、或把发现的问题登记为后续工单时使用。
+category: collaboration
 ---
 
 # 工单驱动的工作流

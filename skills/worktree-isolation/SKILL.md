@@ -1,6 +1,7 @@
 ---
 name: worktree-isolation
 description: 用独立工作树隔离并行改动，避免互相污染。当需要同时处理多个任务、让多个执行者并行改同一仓库、或要把实验性改动与主分支隔开时使用。
+category: engineering
 ---
 
 # 工作树隔离

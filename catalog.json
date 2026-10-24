@@ -1,13 +1,63 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "generatedBy": "scripts/validate.mjs",
   "installUrlTemplate": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/<id>",
+  "total": 200,
+  "categories": {
+    "data": 13,
+    "quality": 11,
+    "security": 10,
+    "design": 13,
+    "engineering": 14,
+    "ai": 12,
+    "mobile": 7,
+    "writing": 12,
+    "automation": 8,
+    "content": 12,
+    "learning": 8,
+    "collaboration": 13,
+    "operations": 17,
+    "finance": 6,
+    "business": 8,
+    "research": 10,
+    "product": 11,
+    "legal": 5,
+    "personal": 10
+  },
   "skills": [
+    {
+      "id": "ab-testing",
+      "name": "ab-testing",
+      "title": "A/B 实验",
+      "description": "设计并评估对照实验。当需要验证改动是否真的有效时使用。",
+      "category": "data",
+      "path": "skills/ab-testing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ab-testing"
+    },
+    {
+      "id": "acceptance-criteria",
+      "name": "acceptance-criteria",
+      "title": "验收标准",
+      "description": "把需求转成可执行的验收条件。当开发与测试对\"做完\"理解不一致时使用。",
+      "category": "quality",
+      "path": "skills/acceptance-criteria/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/acceptance-criteria"
+    },
+    {
+      "id": "access-review",
+      "name": "access-review",
+      "title": "权限审查",
+      "description": "定期检查谁拥有什么权限。当需要满足最小权限、清理离职与临时授权时使用。",
+      "category": "security",
+      "path": "skills/access-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/access-review"
+    },
     {
       "id": "accessibility-review",
       "name": "accessibility-review",
       "title": "可访问性检查",
       "description": "检查并改进界面可访问性。当需要支持键盘操作、屏幕阅读器、表单可用性，或做无障碍合规检查时使用。",
+      "category": "design",
       "path": "skills/accessibility-review/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/accessibility-review"
     },
@@ -16,54 +66,241 @@
       "name": "adr",
       "title": "架构决策记录",
       "description": "记录架构决策（ADR）。当做出影响长期结构的选择、需要在多个方案间定夺、或要让后来者理解决策背景时使用。产出可追溯的决策记录。",
+      "category": "engineering",
       "path": "skills/adr/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/adr"
+    },
+    {
+      "id": "agent-design",
+      "name": "agent-design",
+      "title": "智能体设计",
+      "description": "设计能自主完成多步任务的智能体。当需要端到端执行而非单次回答时使用。",
+      "category": "ai",
+      "path": "skills/agent-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/agent-design"
+    },
+    {
+      "id": "android-permissions",
+      "name": "android-permissions",
+      "title": "Android 权限",
+      "description": "正确申请与处理运行时权限。当出现权限拒绝、上架被拒时使用。",
+      "category": "mobile",
+      "path": "skills/android-permissions/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/android-permissions"
     },
     {
       "id": "api-contract",
       "name": "api-contract",
       "title": "接口契约",
       "description": "设计或修改对外接口契约。当新增接口、修改请求/响应格式、调整错误码、或需要保证向后兼容时使用。产出明确的输入输出约定与兼容策略。",
+      "category": "engineering",
       "path": "skills/api-contract/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/api-contract"
+    },
+    {
+      "id": "api-docs",
+      "name": "api-docs",
+      "title": "API 文档",
+      "description": "编写接口文档。当需要说明请求参数、响应结构、错误码与鉴权方式时使用。",
+      "category": "writing",
+      "path": "skills/api-docs/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/api-docs"
+    },
+    {
+      "id": "api-rate-limiting",
+      "name": "api-rate-limiting",
+      "title": "限流与配额",
+      "description": "保护系统与外部接口的调用量。当出现超限、被限流或成本失控时使用。",
+      "category": "automation",
+      "path": "skills/api-rate-limiting/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/api-rate-limiting"
+    },
+    {
+      "id": "app-store-listing",
+      "name": "app-store-listing",
+      "title": "应用商店页面",
+      "description": "优化应用的商店展示。当需要提升下载转化时使用。",
+      "category": "mobile",
+      "path": "skills/app-store-listing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/app-store-listing"
+    },
+    {
+      "id": "article-writing",
+      "name": "article-writing",
+      "title": "长文写作",
+      "description": "撰写有结构的文章。当需要表达观点、讲清方法或做深度解读时使用。",
+      "category": "content",
+      "path": "skills/article-writing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/article-writing"
+    },
+    {
+      "id": "assessment-design",
+      "name": "assessment-design",
+      "title": "评估设计",
+      "description": "设计能检验真实能力的考核。当需要判断学习是否有效时使用。",
+      "category": "learning",
+      "path": "skills/assessment-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/assessment-design"
+    },
+    {
+      "id": "async-communication",
+      "name": "async-communication",
+      "title": "异步沟通",
+      "description": "写出不依赖即时回复的沟通内容。当跨时区、跨团队协作时使用。",
+      "category": "collaboration",
+      "path": "skills/async-communication/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/async-communication"
+    },
+    {
+      "id": "audit-logging",
+      "name": "audit-logging",
+      "title": "审计日志",
+      "description": "记录关键操作以便追溯。当需要满足合规、排查越权或还原事故时使用。",
+      "category": "security",
+      "path": "skills/audit-logging/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/audit-logging"
+    },
+    {
+      "id": "backlog-refinement",
+      "name": "backlog-refinement",
+      "title": "待办梳理",
+      "description": "保持待办列表清晰可执行。当条目堆积、无人理解细节时使用。",
+      "category": "collaboration",
+      "path": "skills/backlog-refinement/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/backlog-refinement"
+    },
+    {
+      "id": "backup-restore",
+      "name": "backup-restore",
+      "title": "备份与恢复",
+      "description": "设计并验证数据备份。当需要保证数据可恢复、满足保留要求时使用。",
+      "category": "operations",
+      "path": "skills/backup-restore/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/backup-restore"
+    },
+    {
+      "id": "batch-job-design",
+      "name": "batch-job-design",
+      "title": "批处理设计",
+      "description": "设计处理大量数据的离线任务。当需要定时处理大批量记录时使用。",
+      "category": "automation",
+      "path": "skills/batch-job-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/batch-job-design"
+    },
+    {
+      "id": "blog-post",
+      "name": "blog-post",
+      "title": "博客写作",
+      "description": "撰写面向读者的技术或经验分享。当需要对外输出经验、建立影响力时使用。",
+      "category": "content",
+      "path": "skills/blog-post/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/blog-post"
     },
     {
       "id": "browser-debugging",
       "name": "browser-debugging",
       "title": "前端问题排查",
       "description": "排查前端页面问题（白屏、报错、请求失败、样式错乱、状态不对）。当需要复现前端 bug、定位是网络/脚本/样式/状态哪一层的问题时使用。",
+      "category": "design",
       "path": "skills/browser-debugging/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/browser-debugging"
+    },
+    {
+      "id": "budget-planning",
+      "name": "budget-planning",
+      "title": "预算规划",
+      "description": "为团队或项目制定预算。当需要控制支出、申请资源时使用。",
+      "category": "finance",
+      "path": "skills/budget-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/budget-planning"
     },
     {
       "id": "bug-fix",
       "name": "bug-fix",
       "title": "缺陷修复",
       "description": "系统化排查并修复缺陷。当出现报错、崩溃、异常、测试失败、功能不工作、行为不符合预期时使用。先复现定位，生成按副作用排序的修复方案，逐个尝试成功即停，最后回归验证。",
+      "category": "engineering",
       "path": "skills/bug-fix/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/bug-fix"
+    },
+    {
+      "id": "business-model-canvas",
+      "name": "business-model-canvas",
+      "title": "商业模式画布",
+      "description": "梳理一门生意的价值与成本结构。当需要判断可行性或寻找杠杆点时使用。",
+      "category": "business",
+      "path": "skills/business-model-canvas/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/business-model-canvas"
+    },
+    {
+      "id": "capacity-planning",
+      "name": "capacity-planning",
+      "title": "容量规划",
+      "description": "预测并准备资源以支撑增长。当出现性能瓶颈或成本与容量失衡时使用。",
+      "category": "operations",
+      "path": "skills/capacity-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/capacity-planning"
+    },
+    {
+      "id": "carousel-design",
+      "name": "carousel-design",
+      "title": "轮播图文案",
+      "description": "设计多页滑动的内容结构。当需要在图文平台讲清一个主题时使用。",
+      "category": "content",
+      "path": "skills/carousel-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/carousel-design"
     },
     {
       "id": "change-impact",
       "name": "change-impact",
       "title": "变更影响分析",
       "description": "在修改代码前评估影响面与回归范围。当需要判断改动会波及哪些模块、是否破坏公共接口、要不要通知其他成员、哪些测试必须重跑时使用；也用于拆分大改动、评估风险等级。",
+      "category": "engineering",
       "path": "skills/change-impact/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/change-impact"
+    },
+    {
+      "id": "changelog",
+      "name": "changelog",
+      "title": "变更日志",
+      "description": "维护面向使用者的变更日志。当发布新版本、需要说明行为变化与升级影响时使用。",
+      "category": "writing",
+      "path": "skills/changelog/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/changelog"
+    },
+    {
+      "id": "churn-analysis",
+      "name": "churn-analysis",
+      "title": "流失分析",
+      "description": "找出用户离开的原因与信号。当留存下降、需要干预时使用。",
+      "category": "business",
+      "path": "skills/churn-analysis/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/churn-analysis"
     },
     {
       "id": "ci-pipeline",
       "name": "ci-pipeline",
       "title": "持续集成流水线",
       "description": "设计或排查持续集成流水线。当需要新增检查阶段、解决\"本地通过 CI 失败\"、优化流水线耗时、或判断该在 CI 里跑什么时使用。",
+      "category": "operations",
       "path": "skills/ci-pipeline/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ci-pipeline"
+    },
+    {
+      "id": "cloud-cost",
+      "name": "cloud-cost",
+      "title": "云成本优化",
+      "description": "找出并降低不必要的云支出。当账单异常增长或需要预算控制时使用。",
+      "category": "operations",
+      "path": "skills/cloud-cost/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/cloud-cost"
     },
     {
       "id": "code-review",
       "name": "code-review",
       "title": "代码审查",
       "description": "审查代码改动，发现问题并给出分级建议。当需要审查 diff、复核提交、检查有没有问题、PR 评审、修完后再看一遍，或涉及安全/并发/数据库/公共 API 等高风险改动时使用。",
+      "category": "engineering",
       "path": "skills/code-review/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/code-review"
     },
@@ -72,158 +309,979 @@
       "name": "codebase-qa",
       "title": "代码问答",
       "description": "基于真实代码回答关于项目的问题。当被问到\"这个功能怎么实现的\"\"这段代码做什么\"\"在哪里处理 X\"\"为什么这样写\"时使用。回答必须给出文件与位置证据。",
+      "category": "research",
       "path": "skills/codebase-qa/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/codebase-qa"
+    },
+    {
+      "id": "cohort-analysis",
+      "name": "cohort-analysis",
+      "title": "同期群分析",
+      "description": "按时间或特征分组观察行为变化。当需要区分“整体增长”与“单群变差”时使用。",
+      "category": "data",
+      "path": "skills/cohort-analysis/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/cohort-analysis"
+    },
+    {
+      "id": "color-systems",
+      "name": "color-systems",
+      "title": "配色系统",
+      "description": "建立一致且可访问的颜色体系。当颜色使用混乱或对比度不足时使用。",
+      "category": "design",
+      "path": "skills/color-systems/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/color-systems"
+    },
+    {
+      "id": "competitive-intel",
+      "name": "competitive-intel",
+      "title": "竞争情报",
+      "description": "持续收集并分析对手动向。当需要判断市场变化与自身定位时使用。",
+      "category": "research",
+      "path": "skills/competitive-intel/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/competitive-intel"
+    },
+    {
+      "id": "competitor-analysis",
+      "name": "competitor-analysis",
+      "title": "竞品分析",
+      "description": "结构化比较竞品以找到差异机会。当需要定位、定价或功能决策时使用。",
+      "category": "product",
+      "path": "skills/competitor-analysis/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/competitor-analysis"
+    },
+    {
+      "id": "concise-writing",
+      "name": "concise-writing",
+      "title": "简洁写作",
+      "description": "压缩冗长文本，保留信息密度。当文档过长、汇报没人看完、需要精简表达时使用。",
+      "category": "writing",
+      "path": "skills/concise-writing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/concise-writing"
     },
     {
       "id": "config-management",
       "name": "config-management",
       "title": "配置管理",
       "description": "管理应用配置与环境变量。当新增配置项、排查\"某环境行为不同\"、处理默认值与密钥、或需要保证配置错误时快速失败时使用。",
+      "category": "operations",
       "path": "skills/config-management/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/config-management"
+    },
+    {
+      "id": "container-image",
+      "name": "container-image",
+      "title": "容器镜像构建",
+      "description": "构建小而安全、可复现的镜像。当镜像过大、构建慢或存在安全风险时使用。",
+      "category": "operations",
+      "path": "skills/container-image/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/container-image"
+    },
+    {
+      "id": "content-calendar",
+      "name": "content-calendar",
+      "title": "内容日历",
+      "description": "规划持续的内容产出。当内容更新不规律、团队协作混乱时使用。",
+      "category": "business",
+      "path": "skills/content-calendar/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/content-calendar"
+    },
+    {
+      "id": "content-repurposing",
+      "name": "content-repurposing",
+      "title": "内容复用",
+      "description": "把一份内容拆分适配多个渠道。当需要提高内容产出效率时使用。",
+      "category": "content",
+      "path": "skills/content-repurposing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/content-repurposing"
     },
     {
       "id": "context-management",
       "name": "context-management",
       "title": "长任务上下文管理",
       "description": "在长任务中保持上下文连贯。当任务跨越很多轮、上下文接近上限、需要中断后恢复、或要把工作交接给新的执行者时使用。",
+      "category": "ai",
       "path": "skills/context-management/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/context-management"
+    },
+    {
+      "id": "contract-review",
+      "name": "contract-review",
+      "title": "合同审阅",
+      "description": "在签署前识别合同中的关键风险条款。当需要审阅服务、采购或合作合同时使用。",
+      "category": "legal",
+      "path": "skills/contract-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/contract-review"
+    },
+    {
+      "id": "contract-testing",
+      "name": "contract-testing",
+      "title": "契约测试",
+      "description": "保证服务提供方与使用方对接口理解一致。当多团队并行开发、接口频繁变更时使用。",
+      "category": "quality",
+      "path": "skills/contract-testing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/contract-testing"
+    },
+    {
+      "id": "cost-control",
+      "name": "cost-control",
+      "title": "模型成本控制",
+      "description": "控制推理成本。当用量增长、账单超预期时使用。",
+      "category": "ai",
+      "path": "skills/cost-control/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/cost-control"
+    },
+    {
+      "id": "cron-scheduling",
+      "name": "cron-scheduling",
+      "title": "定时任务",
+      "description": "设计可靠的周期性任务。当需要定时同步、清理或报表时使用。",
+      "category": "automation",
+      "path": "skills/cron-scheduling/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/cron-scheduling"
+    },
+    {
+      "id": "curriculum-design",
+      "name": "curriculum-design",
+      "title": "课程设计",
+      "description": "设计一条从入门到掌握的路径。当需要系统培养某项能力时使用。",
+      "category": "learning",
+      "path": "skills/curriculum-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/curriculum-design"
+    },
+    {
+      "id": "customer-support-triage",
+      "name": "customer-support-triage",
+      "title": "客户支持分诊",
+      "description": "快速分类并路由客户问题。当工单量大、响应不一致时使用。",
+      "category": "business",
+      "path": "skills/customer-support-triage/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/customer-support-triage"
+    },
+    {
+      "id": "daily-planning",
+      "name": "daily-planning",
+      "title": "每日计划",
+      "description": "安排一天的工作重点。当任务多、容易被打断时使用。",
+      "category": "personal",
+      "path": "skills/daily-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/daily-planning"
+    },
+    {
+      "id": "dashboard-design",
+      "name": "dashboard-design",
+      "title": "看板设计",
+      "description": "设计用于决策的数据看板。当需要把指标组织成可读界面时使用。",
+      "category": "data",
+      "path": "skills/dashboard-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/dashboard-design"
+    },
+    {
+      "id": "data-cleaning",
+      "name": "data-cleaning",
+      "title": "数据清洗",
+      "description": "处理缺失、重复、格式不一致与异常值。当原始数据无法直接分析时使用。",
+      "category": "data",
+      "path": "skills/data-cleaning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-cleaning"
+    },
+    {
+      "id": "data-exploration",
+      "name": "data-exploration",
+      "title": "数据探索",
+      "description": "快速了解一个陌生数据集的规模、分布与质量问题。当拿到新数据、需要判断能回答什么问题前使用。",
+      "category": "data",
+      "path": "skills/data-exploration/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-exploration"
     },
     {
       "id": "data-migration",
       "name": "data-migration",
       "title": "数据迁移",
       "description": "安全地变更数据库结构或迁移数据。当需要加字段、改类型、拆表、回填数据、清理旧数据，或评估迁移的回滚与兼容性时使用。",
+      "category": "data",
       "path": "skills/data-migration/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-migration"
+    },
+    {
+      "id": "data-privacy",
+      "name": "data-privacy",
+      "title": "数据隐私",
+      "description": "处理个人信息时的合规与安全要求。当收集、存储、导出或删除用户数据时使用。",
+      "category": "security",
+      "path": "skills/data-privacy/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-privacy"
+    },
+    {
+      "id": "data-quality-audit",
+      "name": "data-quality-audit",
+      "title": "数据质量审计",
+      "description": "系统检查一批数据的可信度。当数据用于对外发布或重大决策前使用。",
+      "category": "data",
+      "path": "skills/data-quality-audit/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-quality-audit"
+    },
+    {
+      "id": "data-validation",
+      "name": "data-validation",
+      "title": "数据校验",
+      "description": "为数据管道或报表建立校验规则。当需要防止错误数据流入下游时使用。",
+      "category": "data",
+      "path": "skills/data-validation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-validation"
+    },
+    {
+      "id": "data-visualization",
+      "name": "data-visualization",
+      "title": "数据可视化",
+      "description": "选择并制作能准确传达结论的图表。当需要汇报、解释趋势或对比时使用。",
+      "category": "data",
+      "path": "skills/data-visualization/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-visualization"
+    },
+    {
+      "id": "dataset-curation",
+      "name": "dataset-curation",
+      "title": "数据集整理",
+      "description": "构建可用于训练或评测的数据集。当需要提升数据质量时使用。",
+      "category": "ai",
+      "path": "skills/dataset-curation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/dataset-curation"
+    },
+    {
+      "id": "decision-facilitation",
+      "name": "decision-facilitation",
+      "title": "决策推进",
+      "description": "帮助团队在分歧中做出决定。当讨论反复、无人拍板时使用。",
+      "category": "collaboration",
+      "path": "skills/decision-facilitation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/decision-facilitation"
+    },
+    {
+      "id": "decision-journal",
+      "name": "decision-journal",
+      "title": "决策日志",
+      "description": "记录重要决策及其依据。当需要复盘判断质量、避免重复犯错时使用。",
+      "category": "personal",
+      "path": "skills/decision-journal/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/decision-journal"
+    },
+    {
+      "id": "deep-research",
+      "name": "deep-research",
+      "title": "深度调研",
+      "description": "对一个问题做多来源系统调查。当需要形成有依据的判断而非快速印象时使用。",
+      "category": "research",
+      "path": "skills/deep-research/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/deep-research"
+    },
+    {
+      "id": "delegation-brief",
+      "name": "delegation-brief",
+      "title": "委派说明",
+      "description": "把任务交付给他人时写清要求。当委派后反复返工、对方总问细节时使用。",
+      "category": "personal",
+      "path": "skills/delegation-brief/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/delegation-brief"
     },
     {
       "id": "dependency-audit",
       "name": "dependency-audit",
       "title": "依赖评估",
       "description": "评估引入、升级或移除依赖。当需要新增第三方库、升级版本、处理安全公告、或判断能否用现有代码替代时使用。",
+      "category": "engineering",
       "path": "skills/dependency-audit/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/dependency-audit"
+    },
+    {
+      "id": "dependency-vuln-triage",
+      "name": "dependency-vuln-triage",
+      "title": "依赖漏洞分级",
+      "description": "判断漏洞告警是否需要立即处理。当扫描报告大量告警、需要排优先级时使用。",
+      "category": "security",
+      "path": "skills/dependency-vuln-triage/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/dependency-vuln-triage"
+    },
+    {
+      "id": "deployment-strategy",
+      "name": "deployment-strategy",
+      "title": "部署策略",
+      "description": "选择并设计安全的发布方式。当需要降低发布风险、支持快速回滚时使用。",
+      "category": "operations",
+      "path": "skills/deployment-strategy/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/deployment-strategy"
+    },
+    {
+      "id": "design-handoff",
+      "name": "design-handoff",
+      "title": "设计交付",
+      "description": "把设计准确交给实现方。当开发反复问细节、实现与设计偏差大时使用。",
+      "category": "design",
+      "path": "skills/design-handoff/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/design-handoff"
+    },
+    {
+      "id": "design-system",
+      "name": "design-system",
+      "title": "设计系统",
+      "description": "建立可复用的组件与样式规范。当界面开始不一致、多人协作需要共同语言时使用。",
+      "category": "design",
+      "path": "skills/design-system/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/design-system"
     },
     {
       "id": "device-automation",
       "name": "device-automation",
       "title": "设备自动化",
       "description": "自动化移动设备或模拟器做功能验证。当需要点击、滑动、输入、安装应用、授予权限、截图或读取界面结构来验证移动端行为时使用。",
+      "category": "mobile",
       "path": "skills/device-automation/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/device-automation"
+    },
+    {
+      "id": "disaster-recovery",
+      "name": "disaster-recovery",
+      "title": "灾难恢复",
+      "description": "为区域性故障准备恢复方案。当业务需要跨可用区/跨地域容灾时使用。",
+      "category": "operations",
+      "path": "skills/disaster-recovery/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/disaster-recovery"
     },
     {
       "id": "disposable-workspace",
       "name": "disposable-workspace",
       "title": "一次性执行环境",
       "description": "为单个任务创建一次性、可丢弃的执行环境。当任务需要隔离依赖、避免污染主环境、并行跑互不干扰的验证，或需要可复现的干净环境时使用。",
+      "category": "operations",
       "path": "skills/disposable-workspace/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/disposable-workspace"
+    },
+    {
+      "id": "e2e-testing",
+      "name": "e2e-testing",
+      "title": "端到端测试",
+      "description": "从用户视角验证完整流程。当关键路径需要上线前确认时使用。",
+      "category": "quality",
+      "path": "skills/e2e-testing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/e2e-testing"
+    },
+    {
+      "id": "editing-proofreading",
+      "name": "editing-proofreading",
+      "title": "编辑校对",
+      "description": "校对文本的准确性、一致性与可读性。当文档准备发布、需要检查错漏与风格不统一时使用。",
+      "category": "writing",
+      "path": "skills/editing-proofreading/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/editing-proofreading"
+    },
+    {
+      "id": "embedding-strategy",
+      "name": "embedding-strategy",
+      "title": "向量化策略",
+      "description": "设计文本向量化与索引方案。当检索效果不佳时需要调整。",
+      "category": "ai",
+      "path": "skills/embedding-strategy/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/embedding-strategy"
     },
     {
       "id": "engineering-workflow",
       "name": "engineering-workflow",
       "title": "工程交付流程",
       "description": "工程交付五步法：需求理解、方案设计、代码实现、代码审查、缺陷修复。当需要实现功能、修改代码、交付可验证结果，或不知道从哪一步开始时使用；也用于判断当前任务处在哪一步、下一步该做什么。",
+      "category": "engineering",
       "path": "skills/engineering-workflow/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/engineering-workflow"
+    },
+    {
+      "id": "estimation",
+      "name": "estimation",
+      "title": "工作量估算",
+      "description": "对任务规模做出有依据的估计。当需要排期或承诺交付时使用。",
+      "category": "collaboration",
+      "path": "skills/estimation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/estimation"
+    },
+    {
+      "id": "evaluation-harness",
+      "name": "evaluation-harness",
+      "title": "评测集建设",
+      "description": "为模型或提示建立可重复的评测。当需要判断改动是否变好时使用。",
+      "category": "ai",
+      "path": "skills/evaluation-harness/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/evaluation-harness"
+    },
+    {
+      "id": "expense-review",
+      "name": "expense-review",
+      "title": "费用审核",
+      "description": "检查报销与支出的合规性。当需要处理报销、控制成本时使用。",
+      "category": "finance",
+      "path": "skills/expense-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/expense-review"
+    },
+    {
+      "id": "explanation-ladder",
+      "name": "explanation-ladder",
+      "title": "分层解释",
+      "description": "把复杂概念讲给不同背景的人。当需要向非专业者解释技术问题时使用。",
+      "category": "learning",
+      "path": "skills/explanation-ladder/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/explanation-ladder"
     },
     {
       "id": "external-publishing",
       "name": "external-publishing",
       "title": "对外发布",
       "description": "把产物发布到外部可见的位置（分享链接、公共页面、制品库）。当需要发布报告、演示页、构建产物，或需要判断\"这个动作能不能自动做\"时使用。",
+      "category": "operations",
       "path": "skills/external-publishing/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/external-publishing"
+    },
+    {
+      "id": "fact-checking",
+      "name": "fact-checking",
+      "title": "事实核查",
+      "description": "在发布前核实关键陈述。当材料包含数字、引语或因果断言时使用。",
+      "category": "research",
+      "path": "skills/fact-checking/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/fact-checking"
+    },
+    {
+      "id": "feature-spec",
+      "name": "feature-spec",
+      "title": "功能规格",
+      "description": "把需求细化为可实现的功能规格。当开发需要明确交互与数据规则时使用。",
+      "category": "product",
+      "path": "skills/feature-spec/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/feature-spec"
+    },
+    {
+      "id": "feedback-writing",
+      "name": "feedback-writing",
+      "title": "反馈写作",
+      "description": "给出具体、可行动的反馈。当需要评价他人工作又不想引起抵触时使用。",
+      "category": "learning",
+      "path": "skills/feedback-writing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/feedback-writing"
+    },
+    {
+      "id": "financial-modeling",
+      "name": "financial-modeling",
+      "title": "财务模型",
+      "description": "建立可调的收支预测模型。当需要评估资金需求与情景影响时使用。",
+      "category": "business",
+      "path": "skills/financial-modeling/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/financial-modeling"
+    },
+    {
+      "id": "financial-reporting",
+      "name": "financial-reporting",
+      "title": "财务汇报",
+      "description": "向非财务人员说明财务状态。当需要向管理层或团队汇报经营情况时使用。",
+      "category": "finance",
+      "path": "skills/financial-reporting/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/financial-reporting"
     },
     {
       "id": "flaky-test",
       "name": "flaky-test",
       "title": "不稳定测试",
       "description": "诊断和修复不稳定的测试。当测试时过时不过、只在 CI 失败、并行时失败、或需要判断是否该隔离某个用例时使用。",
+      "category": "quality",
       "path": "skills/flaky-test/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/flaky-test"
+    },
+    {
+      "id": "funnel-analysis",
+      "name": "funnel-analysis",
+      "title": "漏斗分析",
+      "description": "定位流程中流失最严重的环节。当转化率低于预期、需要找出瓶颈时使用。",
+      "category": "data",
+      "path": "skills/funnel-analysis/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/funnel-analysis"
+    },
+    {
+      "id": "goal-setting",
+      "name": "goal-setting",
+      "title": "目标设定",
+      "description": "把愿望转成可执行的目标。当方向模糊、计划无法落地时使用。",
+      "category": "personal",
+      "path": "skills/goal-setting/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/goal-setting"
+    },
+    {
+      "id": "guardrails-design",
+      "name": "guardrails-design",
+      "title": "护栏设计",
+      "description": "限制模型输出的风险。当模型会面向用户或触发外部动作时使用。",
+      "category": "ai",
+      "path": "skills/guardrails-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/guardrails-design"
+    },
+    {
+      "id": "habit-design",
+      "name": "habit-design",
+      "title": "习惯设计",
+      "description": "建立能持续的行为改变。当需要长期坚持某项实践时使用。",
+      "category": "personal",
+      "path": "skills/habit-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/habit-design"
     },
     {
       "id": "handoff-note",
       "name": "handoff-note",
       "title": "交接说明",
       "description": "编写任务交接说明，让别人或下一个执行者能接着干。当需要中断任务、转交他人、跨团队协作、或恢复一个中断的执行时使用。",
+      "category": "collaboration",
       "path": "skills/handoff-note/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/handoff-note"
+    },
+    {
+      "id": "image-prompt",
+      "name": "image-prompt",
+      "title": "图像提示词",
+      "description": "编写可复现的图像生成提示。当需要稳定产出符合需求的配图时使用。",
+      "category": "content",
+      "path": "skills/image-prompt/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/image-prompt"
+    },
+    {
+      "id": "inbox-zero",
+      "name": "inbox-zero",
+      "title": "收件箱清零",
+      "description": "系统处理消息与邮件。当信息渠道过多、重要事项被淹没时使用。",
+      "category": "personal",
+      "path": "skills/inbox-zero/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/inbox-zero"
+    },
+    {
+      "id": "incident-notification",
+      "name": "incident-notification",
+      "title": "事件通知",
+      "description": "在数据或安全事件发生后按规定通知相关方。当需要履行通知义务时使用。",
+      "category": "legal",
+      "path": "skills/incident-notification/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/incident-notification"
     },
     {
       "id": "incident-response",
       "name": "incident-response",
       "title": "线上故障响应",
       "description": "处理线上故障。当服务不可用、错误率升高、数据异常、或需要快速止血并复盘时使用。先恢复服务，再定位根因。",
+      "category": "operations",
       "path": "skills/incident-response/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/incident-response"
+    },
+    {
+      "id": "infrastructure-as-code",
+      "name": "infrastructure-as-code",
+      "title": "基础设施即代码",
+      "description": "用代码管理基础设施。当环境需要可复现、变更需要审查与回滚时使用。",
+      "category": "operations",
+      "path": "skills/infrastructure-as-code/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/infrastructure-as-code"
     },
     {
       "id": "integration-debugging",
       "name": "integration-debugging",
       "title": "外部集成排查",
       "description": "排查与第三方服务对接的问题（HTTP API、Webhook、OAuth、消息队列、SDK）。当出现认证失败、超时、签名不匹配、回调丢失、字段对不上时使用。",
+      "category": "engineering",
       "path": "skills/integration-debugging/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/integration-debugging"
+    },
+    {
+      "id": "integration-testing",
+      "name": "integration-testing",
+      "title": "集成测试",
+      "description": "验证模块之间与外部依赖的协作。当单元测试通过但联调失败时使用。",
+      "category": "quality",
+      "path": "skills/integration-testing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/integration-testing"
+    },
+    {
+      "id": "invoice-reconciliation",
+      "name": "invoice-reconciliation",
+      "title": "发票对账",
+      "description": "核对账单与记录是否一致。当出现金额差异、漏付或多付时使用。",
+      "category": "finance",
+      "path": "skills/invoice-reconciliation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/invoice-reconciliation"
+    },
+    {
+      "id": "ios-accessibility",
+      "name": "ios-accessibility",
+      "title": "移动端可访问性",
+      "description": "让移动应用支持辅助功能。当需要通过无障碍要求或被用户投诉时使用。",
+      "category": "mobile",
+      "path": "skills/ios-accessibility/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ios-accessibility"
     },
     {
       "id": "issue-tracker-workflow",
       "name": "issue-tracker-workflow",
       "title": "工单驱动的工作流",
       "description": "围绕工单/任务卡系统开展工作。当任务关联了工单、需要读取工单上下文、更新状态、写完成说明、或把发现的问题登记为后续工单时使用。",
+      "category": "collaboration",
       "path": "skills/issue-tracker-workflow/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/issue-tracker-workflow"
+    },
+    {
+      "id": "jobs-to-be-done",
+      "name": "jobs-to-be-done",
+      "title": "待办任务分析",
+      "description": "从用户想完成的任务出发定义需求。当功能越做越多但价值不清时使用。",
+      "category": "product",
+      "path": "skills/jobs-to-be-done/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/jobs-to-be-done"
+    },
+    {
+      "id": "knowledge-base-building",
+      "name": "knowledge-base-building",
+      "title": "知识库构建",
+      "description": "把零散信息整理成可检索的知识体系。当团队重复回答同类问题、经验无法沉淀时使用。",
+      "category": "research",
+      "path": "skills/knowledge-base-building/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/knowledge-base-building"
+    },
+    {
+      "id": "kubernetes-troubleshooting",
+      "name": "kubernetes-troubleshooting",
+      "title": "容器编排排障",
+      "description": "定位 Pod 无法启动、频繁重启、服务不可达等问题。当集群工作负载异常时使用。",
+      "category": "operations",
+      "path": "skills/kubernetes-troubleshooting/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/kubernetes-troubleshooting"
+    },
+    {
+      "id": "lesson-planning",
+      "name": "lesson-planning",
+      "title": "单课设计",
+      "description": "设计一次教学或分享。当需要在一小时内讲清一个主题时使用。",
+      "category": "learning",
+      "path": "skills/lesson-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/lesson-planning"
+    },
+    {
+      "id": "license-compliance",
+      "name": "license-compliance",
+      "title": "许可证合规",
+      "description": "检查依赖或素材的许可证要求。当引入第三方代码或内容时使用。",
+      "category": "legal",
+      "path": "skills/license-compliance/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/license-compliance"
+    },
+    {
+      "id": "literature-review",
+      "name": "literature-review",
+      "title": "文献综述",
+      "description": "系统梳理一个领域已有工作。当需要找到研究空白或技术现状时使用。",
+      "category": "research",
+      "path": "skills/literature-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/literature-review"
+    },
+    {
+      "id": "load-testing",
+      "name": "load-testing",
+      "title": "压力测试",
+      "description": "验证系统在目标负载下的表现。当需要确认容量、找出瓶颈时使用。",
+      "category": "quality",
+      "path": "skills/load-testing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/load-testing"
+    },
+    {
+      "id": "localization",
+      "name": "localization",
+      "title": "本地化",
+      "description": "让产品适配目标地区。当涉及日期、货币、时区、文案长度与文化差异时使用。",
+      "category": "writing",
+      "path": "skills/localization/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/localization"
+    },
+    {
+      "id": "meeting-notes",
+      "name": "meeting-notes",
+      "title": "会议记录",
+      "description": "把会议转化为可执行的结论。当会议多但落不了地时使用。",
+      "category": "personal",
+      "path": "skills/meeting-notes/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/meeting-notes"
+    },
+    {
+      "id": "mentoring",
+      "name": "mentoring",
+      "title": "带人辅导",
+      "description": "帮助他人独立解决问题。当需要培养新人而非替他完成工作时使用。",
+      "category": "learning",
+      "path": "skills/mentoring/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/mentoring"
+    },
+    {
+      "id": "metrics-definition",
+      "name": "metrics-definition",
+      "title": "指标定义",
+      "description": "为业务指标建立唯一、可计算的定义。当出现同名指标口径不一致、需要统一统计方法时使用。",
+      "category": "data",
+      "path": "skills/metrics-definition/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/metrics-definition"
+    },
+    {
+      "id": "mobile-release",
+      "name": "mobile-release",
+      "title": "移动端发布",
+      "description": "准备并提交移动应用版本。当需要发布到应用商店时使用。",
+      "category": "mobile",
+      "path": "skills/mobile-release/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/mobile-release"
+    },
+    {
+      "id": "model-monitoring",
+      "name": "model-monitoring",
+      "title": "模型运行监控",
+      "description": "监控线上模型调用的质量与稳定性。当需要及早发现退化时使用。",
+      "category": "ai",
+      "path": "skills/model-monitoring/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/model-monitoring"
+    },
+    {
+      "id": "model-selection",
+      "name": "model-selection",
+      "title": "模型选型",
+      "description": "为任务选择合适的模型。当需要在成本、质量与延迟间取舍时使用。",
+      "category": "ai",
+      "path": "skills/model-selection/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/model-selection"
+    },
+    {
+      "id": "motion-design",
+      "name": "motion-design",
+      "title": "动效设计",
+      "description": "用动效表达状态变化与空间关系。当交互缺少反馈、转场突兀时使用。",
+      "category": "design",
+      "path": "skills/motion-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/motion-design"
+    },
+    {
+      "id": "mutation-testing",
+      "name": "mutation-testing",
+      "title": "变异测试",
+      "description": "检验测试是否真的能发现问题。当覆盖率很高但仍然漏 bug 时使用。",
+      "category": "quality",
+      "path": "skills/mutation-testing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/mutation-testing"
+    },
+    {
+      "id": "newsletter",
+      "name": "newsletter",
+      "title": "通讯稿",
+      "description": "撰写定期发送的资讯内容。当需要维持受众联系、沉淀价值时使用。",
+      "category": "content",
+      "path": "skills/newsletter/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/newsletter"
+    },
+    {
+      "id": "notification-routing",
+      "name": "notification-routing",
+      "title": "通知路由",
+      "description": "把不同事件发送给正确的人与渠道。当告警太多没人看、重要信息被淹没时使用。",
+      "category": "automation",
+      "path": "skills/notification-routing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/notification-routing"
     },
     {
       "id": "observability",
       "name": "observability",
       "title": "可观测性",
       "description": "为代码补充可观测性（日志、指标、追踪）。当需要排查线上问题、给新功能加埋点、设计告警、或判断\"出了问题能不能查出来\"时使用。",
+      "category": "operations",
       "path": "skills/observability/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/observability"
+    },
+    {
+      "id": "offline-sync",
+      "name": "offline-sync",
+      "title": "离线与同步",
+      "description": "设计弱网与离线场景的数据同步。当移动端网络不稳定时需要。",
+      "category": "mobile",
+      "path": "skills/offline-sync/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/offline-sync"
+    },
+    {
+      "id": "penetration-test-planning",
+      "name": "penetration-test-planning",
+      "title": "渗透测试规划",
+      "description": "组织一次授权的安全测试。当需要评估系统实际攻击面时使用。",
+      "category": "security",
+      "path": "skills/penetration-test-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/penetration-test-planning"
     },
     {
       "id": "performance-review",
       "name": "performance-review",
       "title": "性能审查",
       "description": "审查并改进代码性能。当出现响应慢、内存增长、批量操作变慢、数据库压力大，或改动涉及循环查询、大文件处理、并发时使用。",
+      "category": "engineering",
       "path": "skills/performance-review/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/performance-review"
+    },
+    {
+      "id": "persona-building",
+      "name": "persona-building",
+      "title": "用户画像",
+      "description": "把研究结果整理成可用的用户模型。当团队对目标用户认知不一致时使用。",
+      "category": "product",
+      "path": "skills/persona-building/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/persona-building"
+    },
+    {
+      "id": "podcast-outline",
+      "name": "podcast-outline",
+      "title": "播客提纲",
+      "description": "设计一期对话或独白节目。当需要保证内容有节奏、不跑题时使用。",
+      "category": "content",
+      "path": "skills/podcast-outline/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/podcast-outline"
     },
     {
       "id": "pr-description",
       "name": "pr-description",
       "title": "变更说明",
       "description": "撰写变更说明或合并请求描述。当需要为一次改动写 PR 描述、提交说明、交付说明，或让审查者快速理解改了什么与为什么时使用。",
+      "category": "collaboration",
       "path": "skills/pr-description/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/pr-description"
+    },
+    {
+      "id": "prd-writing",
+      "name": "prd-writing",
+      "title": "需求文档（PRD）",
+      "description": "写清一个需求要做什么、为什么和怎么验收。当需要交付给开发与测试时使用。",
+      "category": "product",
+      "path": "skills/prd-writing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/prd-writing"
+    },
+    {
+      "id": "pricing-margin",
+      "name": "pricing-margin",
+      "title": "定价与毛利",
+      "description": "分析定价与成本结构。当需要调整价格或评估盈利性时使用。",
+      "category": "finance",
+      "path": "skills/pricing-margin/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/pricing-margin"
+    },
+    {
+      "id": "prioritization",
+      "name": "prioritization",
+      "title": "需求优先级",
+      "description": "在有限资源下决定先做什么。当需求堆积、资源冲突时使用。",
+      "category": "product",
+      "path": "skills/prioritization/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/prioritization"
+    },
+    {
+      "id": "product-discovery",
+      "name": "product-discovery",
+      "title": "产品探索",
+      "description": "在投入开发前验证问题与方案。当需要判断“值不值得做”时使用。",
+      "category": "product",
+      "path": "skills/product-discovery/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/product-discovery"
+    },
+    {
+      "id": "product-metrics",
+      "name": "product-metrics",
+      "title": "产品指标设计",
+      "description": "为一款产品定义健康度指标。当需要判断产品是否真的变好时使用。",
+      "category": "product",
+      "path": "skills/product-metrics/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/product-metrics"
+    },
+    {
+      "id": "project-kickoff",
+      "name": "project-kickoff",
+      "title": "项目启动",
+      "description": "在开始时对齐目标、范围与协作方式。当新项目立项、多方参与时使用。",
+      "category": "collaboration",
+      "path": "skills/project-kickoff/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/project-kickoff"
     },
     {
       "id": "project-map",
       "name": "project-map",
       "title": "项目地图",
       "description": "在动手前快速理解一个陌生或大型项目，生成精简的项目地图并共享给团队。当需要理解项目结构、上手新仓库、定位入口与测试命令、为团队建立项目共识、冷启动一个任务时使用。",
+      "category": "research",
       "path": "skills/project-map/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/project-map"
+    },
+    {
+      "id": "prompt-design",
+      "name": "prompt-design",
+      "title": "提示词设计",
+      "description": "为模型任务编写稳定可复现的指令。当输出不稳定、需要结构化结果时使用。",
+      "category": "ai",
+      "path": "skills/prompt-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/prompt-design"
+    },
+    {
+      "id": "push-notifications",
+      "name": "push-notifications",
+      "title": "推送通知",
+      "description": "设计有用且不打扰的推送。当需要提升召回但担心用户关闭通知时使用。",
+      "category": "mobile",
+      "path": "skills/push-notifications/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/push-notifications"
+    },
+    {
+      "id": "rag-design",
+      "name": "rag-design",
+      "title": "检索增强设计",
+      "description": "设计基于知识库的问答。当回答需要依据私有文档时使用。",
+      "category": "ai",
+      "path": "skills/rag-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/rag-design"
+    },
+    {
+      "id": "readme-authoring",
+      "name": "readme-authoring",
+      "title": "README 编写",
+      "description": "编写项目 README。当新建仓库、接手项目或 README 已过期时使用。",
+      "category": "writing",
+      "path": "skills/readme-authoring/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/readme-authoring"
     },
     {
       "id": "refactor-safely",
       "name": "refactor-safely",
       "title": "安全重构",
       "description": "在不改变外部行为的前提下安全重构。当需要整理重复代码、拆分过长函数、替换实现、迁移模块结构，且必须保持现有行为与测试通过时使用。",
+      "category": "engineering",
       "path": "skills/refactor-safely/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/refactor-safely"
+    },
+    {
+      "id": "regression-planning",
+      "name": "regression-planning",
+      "title": "回归范围规划",
+      "description": "确定一次改动需要重测哪些内容。当改动面广、测试资源有限时使用。",
+      "category": "quality",
+      "path": "skills/regression-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/regression-planning"
+    },
+    {
+      "id": "release-notes",
+      "name": "release-notes",
+      "title": "发布说明",
+      "description": "撰写一次发布的对外说明。当需要向用户、客户或内部同步本次发布内容时使用。",
+      "category": "writing",
+      "path": "skills/release-notes/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/release-notes"
     },
     {
       "id": "release-readiness",
       "name": "release-readiness",
       "title": "发布就绪检查",
       "description": "发布前的交付检查。当准备合并、发版、上线，或需要确认\"是否真的可以交付\"时使用。核对变更范围、验证证据、兼容性、回滚方案与风险。",
+      "category": "operations",
       "path": "skills/release-readiness/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/release-readiness"
     },
@@ -232,14 +1290,106 @@
       "name": "requirement-analysis",
       "title": "需求澄清",
       "description": "把模糊想法澄清成可验收的需求。当需求不清楚、验收标准缺失、用户只说\"做个 X\"、或需要在动手前确认范围与边界时使用。产出目标、范围、验收标准和待确认问题。",
+      "category": "product",
       "path": "skills/requirement-analysis/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/requirement-analysis"
+    },
+    {
+      "id": "responsive-layout",
+      "name": "responsive-layout",
+      "title": "响应式布局",
+      "description": "让界面在不同尺寸下都可用。当移动端显示错乱、断点行为不一致时使用。",
+      "category": "design",
+      "path": "skills/responsive-layout/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/responsive-layout"
+    },
+    {
+      "id": "retro-facilitation",
+      "name": "retro-facilitation",
+      "title": "复盘主持",
+      "description": "组织一次有产出的团队复盘。当迭代或项目结束需要改进时使用。",
+      "category": "collaboration",
+      "path": "skills/retro-facilitation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/retro-facilitation"
+    },
+    {
+      "id": "retry-idempotency",
+      "name": "retry-idempotency",
+      "title": "重试与幂等",
+      "description": "安全地处理失败重试。当网络不稳定、需要保证不重复产生副作用时使用。",
+      "category": "automation",
+      "path": "skills/retry-idempotency/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/retry-idempotency"
+    },
+    {
+      "id": "risk-register",
+      "name": "risk-register",
+      "title": "风险登记",
+      "description": "集中记录并跟踪风险。当需要让风险可见、有人负责、有期限时使用。",
+      "category": "security",
+      "path": "skills/risk-register/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/risk-register"
+    },
+    {
+      "id": "risk-tracking",
+      "name": "risk-tracking",
+      "title": "风险跟踪",
+      "description": "识别并跟进项目风险。当项目复杂度高、依赖多方时使用。",
+      "category": "collaboration",
+      "path": "skills/risk-tracking/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/risk-tracking"
+    },
+    {
+      "id": "roadmap-planning",
+      "name": "roadmap-planning",
+      "title": "路线图规划",
+      "description": "把目标拆成有优先级的阶段计划。当需要对外沟通方向、内部对齐节奏时使用。",
+      "category": "product",
+      "path": "skills/roadmap-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/roadmap-planning"
+    },
+    {
+      "id": "runbook-writing",
+      "name": "runbook-writing",
+      "title": "运行手册",
+      "description": "写出可被值班人员直接执行的处置步骤。当需要降低故障响应门槛时使用。",
+      "category": "operations",
+      "path": "skills/runbook-writing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/runbook-writing"
+    },
+    {
+      "id": "runway-modeling",
+      "name": "runway-modeling",
+      "title": "现金 runway 测算",
+      "description": "估算现有资金能支撑多久。当需要判断资金安全与融资节奏时使用。",
+      "category": "finance",
+      "path": "skills/runway-modeling/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/runway-modeling"
+    },
+    {
+      "id": "sales-pipeline",
+      "name": "sales-pipeline",
+      "title": "销售管道管理",
+      "description": "管理从线索到成交的过程。当需要预测收入、找出转化卡点时使用。",
+      "category": "business",
+      "path": "skills/sales-pipeline/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/sales-pipeline"
+    },
+    {
+      "id": "scraper-design",
+      "name": "scraper-design",
+      "title": "采集脚本设计",
+      "description": "设计合法、可持续的数据采集。当需要定期获取公开数据时使用。",
+      "category": "automation",
+      "path": "skills/scraper-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/scraper-design"
     },
     {
       "id": "secret-handling",
       "name": "secret-handling",
       "title": "凭据处理",
       "description": "在代码与工作流中安全处理凭据。当需要接入 API 密钥、配置令牌、排查密钥泄漏、或审查日志与错误输出时使用。",
+      "category": "security",
       "path": "skills/secret-handling/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/secret-handling"
     },
@@ -248,30 +1398,178 @@
       "name": "security-review",
       "title": "安全审查",
       "description": "审查代码的安全风险。当改动涉及认证授权、用户输入、文件与命令执行、外部请求、密钥处理、数据存储，或做发布前安全检查时使用。",
+      "category": "security",
       "path": "skills/security-review/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/security-review"
+    },
+    {
+      "id": "seo-audit",
+      "name": "seo-audit",
+      "title": "SEO 审计",
+      "description": "检查站点在搜索引擎中的可见性问题。当自然流量下降或新站需要优化时使用。",
+      "category": "business",
+      "path": "skills/seo-audit/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/seo-audit"
     },
     {
       "id": "skill-authoring",
       "name": "skill-authoring",
       "title": "编写 Skill",
       "description": "编写或修改 Agent Skill。当需要新增 Skill、重构已有 Skill、判断一个流程是否适合写成 Skill、或统一 Skill 写法时使用。",
+      "category": "ai",
       "path": "skills/skill-authoring/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/skill-authoring"
+    },
+    {
+      "id": "social-post",
+      "name": "social-post",
+      "title": "社交内容",
+      "description": "撰写适合社交平台的短内容。当需要传播观点、分享成果时使用。",
+      "category": "content",
+      "path": "skills/social-post/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/social-post"
+    },
+    {
+      "id": "source-evaluation",
+      "name": "source-evaluation",
+      "title": "来源评估",
+      "description": "判断一条信息是否可信。当需要引用外部资料或核查说法时使用。",
+      "category": "research",
+      "path": "skills/source-evaluation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/source-evaluation"
+    },
+    {
+      "id": "spaced-repetition",
+      "name": "spaced-repetition",
+      "title": "间隔复习",
+      "description": "设计长期记忆的复习计划。当需要真正掌握而非短期记住时使用。",
+      "category": "learning",
+      "path": "skills/spaced-repetition/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/spaced-repetition"
+    },
+    {
+      "id": "spreadsheet-analysis",
+      "name": "spreadsheet-analysis",
+      "title": "表格分析",
+      "description": "用电子表格完成数据整理与分析。当数据规模不大、需要快速核对或交付时使用。",
+      "category": "data",
+      "path": "skills/spreadsheet-analysis/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/spreadsheet-analysis"
+    },
+    {
+      "id": "sprint-planning",
+      "name": "sprint-planning",
+      "title": "迭代规划",
+      "description": "为一个短周期确定可完成的工作。当需要平衡承诺与变化时使用。",
+      "category": "collaboration",
+      "path": "skills/sprint-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/sprint-planning"
+    },
+    {
+      "id": "sql-querying",
+      "name": "sql-querying",
+      "title": "SQL 查询",
+      "description": "编写正确且可维护的查询。当需要从关系库取数、排查统计口径、优化慢查询时使用。",
+      "category": "data",
+      "path": "skills/sql-querying/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/sql-querying"
+    },
+    {
+      "id": "stakeholder-update",
+      "name": "stakeholder-update",
+      "title": "干系人同步",
+      "description": "向非执行者汇报进展。当需要保持信任、提前暴露风险时使用。",
+      "category": "collaboration",
+      "path": "skills/stakeholder-update/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/stakeholder-update"
+    },
+    {
+      "id": "storyboard",
+      "name": "storyboard",
+      "title": "故事板",
+      "description": "把叙事拆成连续画面。当需要规划视频或动画结构时使用。",
+      "category": "content",
+      "path": "skills/storyboard/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/storyboard"
+    },
+    {
+      "id": "study-planning",
+      "name": "study-planning",
+      "title": "学习计划",
+      "description": "为有限时间安排学习路径。当目标明确但不知从何入手时使用。",
+      "category": "learning",
+      "path": "skills/study-planning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/study-planning"
+    },
+    {
+      "id": "style-guide",
+      "name": "style-guide",
+      "title": "写作风格规范",
+      "description": "为团队建立统一的写作规范。当多人产出文档、风格不一致、需要可执行的写作标准时使用。",
+      "category": "writing",
+      "path": "skills/style-guide/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/style-guide"
+    },
+    {
+      "id": "subtitle-captioning",
+      "name": "subtitle-captioning",
+      "title": "字幕制作",
+      "description": "制作准确易读的字幕。当视频需要无障碍或跨语言传播时使用。",
+      "category": "content",
+      "path": "skills/subtitle-captioning/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/subtitle-captioning"
+    },
+    {
+      "id": "summarization",
+      "name": "summarization",
+      "title": "摘要提炼",
+      "description": "把长材料压缩成可用要点。当需要快速掌握大量信息时使用。",
+      "category": "research",
+      "path": "skills/summarization/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/summarization"
+    },
+    {
+      "id": "supply-chain-security",
+      "name": "supply-chain-security",
+      "title": "供应链安全",
+      "description": "降低第三方依赖与构建流程被投毒的风险。当引入依赖、发布产物时使用。",
+      "category": "security",
+      "path": "skills/supply-chain-security/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/supply-chain-security"
+    },
+    {
+      "id": "survey-design",
+      "name": "survey-design",
+      "title": "问卷设计",
+      "description": "设计能获得可信答案的问卷。当需要量化用户或团队反馈时使用。",
+      "category": "research",
+      "path": "skills/survey-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/survey-design"
     },
     {
       "id": "task-orchestration",
       "name": "task-orchestration",
       "title": "任务编排",
       "description": "结构化地协调多个执行者完成一个目标：区分交接与受控分派、拆分任务、建立依赖、跟踪状态、处理阻塞与升级。当需要把大目标拆给多个执行者、等待他人产出、处理失败重试、或判断何时该升级给人工时使用。",
+      "category": "collaboration",
       "path": "skills/task-orchestration/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/task-orchestration"
+    },
+    {
+      "id": "task-triage",
+      "name": "task-triage",
+      "title": "任务分诊",
+      "description": "快速决定任务做、拖、转、丢。当待办堆积、优先级混乱时使用。",
+      "category": "personal",
+      "path": "skills/task-triage/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/task-triage"
     },
     {
       "id": "tech-debt-triage",
       "name": "tech-debt-triage",
       "title": "技术债分级",
       "description": "识别并排序技术债。当需要判断哪些债该先还、是否值得重构、如何在不影响交付的前提下改进，或需要为技术债争取排期时使用。",
+      "category": "engineering",
       "path": "skills/tech-debt-triage/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/tech-debt-triage"
     },
@@ -280,46 +1578,250 @@
       "name": "technical-design",
       "title": "技术方案设计",
       "description": "基于需求设计可落地的技术方案。当需求已清楚、需要确定模块划分、数据流、接口契约与关键权衡时使用；也用于比较多个方案、评估改动范围。",
+      "category": "engineering",
       "path": "skills/technical-design/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/technical-design"
+    },
+    {
+      "id": "technical-writing",
+      "name": "technical-writing",
+      "title": "技术文档写作",
+      "description": "撰写面向使用者的技术文档。当需要写功能说明、接入指南、操作手册或解释复杂机制时使用。",
+      "category": "writing",
+      "path": "skills/technical-writing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/technical-writing"
     },
     {
       "id": "terminal-session",
       "name": "terminal-session",
       "title": "终端会话驱动",
       "description": "可靠地驱动终端里的交互式会话（REPL、TUI 工具、长期运行的命令）。当需要向终端发送输入、等待程序就绪、读取长输出、或处理会话句柄失效时使用。",
+      "category": "engineering",
       "path": "skills/terminal-session/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/terminal-session"
+    },
+    {
+      "id": "terms-privacy-drafting",
+      "name": "terms-privacy-drafting",
+      "title": "条款与隐私说明",
+      "description": "起草用户协议与隐私说明的要点。当产品上线需要合规文本时使用。",
+      "category": "legal",
+      "path": "skills/terms-privacy-drafting/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/terms-privacy-drafting"
+    },
+    {
+      "id": "terraform-review",
+      "name": "terraform-review",
+      "title": "Terraform 变更审查",
+      "description": "审查基础设施变更计划。当需要判断一次 apply 会不会造成中断或数据丢失时使用。",
+      "category": "operations",
+      "path": "skills/terraform-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/terraform-review"
     },
     {
       "id": "test-design",
       "name": "test-design",
       "title": "测试设计",
       "description": "为改动设计有效测试。当需要补测试、判断测试是否充分、修复后防止回归、或审查改动缺少覆盖时使用。覆盖正常路径、边界、错误路径和回归点。",
+      "category": "quality",
       "path": "skills/test-design/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/test-design"
+    },
+    {
+      "id": "test-strategy",
+      "name": "test-strategy",
+      "title": "测试策略",
+      "description": "为一个项目确定测什么、测到哪一层。当测试零散、不知道覆盖是否足够时使用。",
+      "category": "quality",
+      "path": "skills/test-strategy/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/test-strategy"
+    },
+    {
+      "id": "threat-modeling",
+      "name": "threat-modeling",
+      "title": "威胁建模",
+      "description": "在设计阶段识别安全风险。当新增系统、改动信任边界或做安全评审前使用。",
+      "category": "security",
+      "path": "skills/threat-modeling/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/threat-modeling"
+    },
+    {
+      "id": "thumbnail-brief",
+      "name": "thumbnail-brief",
+      "title": "封面设计需求",
+      "description": "给封面提出明确的设计要求。当需要统一视觉风格、提升点击率时使用。",
+      "category": "content",
+      "path": "skills/thumbnail-brief/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/thumbnail-brief"
+    },
+    {
+      "id": "time-blocking",
+      "name": "time-blocking",
+      "title": "时间块安排",
+      "description": "把任务安排到具体时间段。当总被会议打断、深度工作不足时使用。",
+      "category": "personal",
+      "path": "skills/time-blocking/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/time-blocking"
+    },
+    {
+      "id": "translation",
+      "name": "translation",
+      "title": "翻译",
+      "description": "在保持原意的前提下翻译内容。当需要跨语言传达技术或产品信息时使用。",
+      "category": "writing",
+      "path": "skills/translation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/translation"
+    },
+    {
+      "id": "tutorial-writing",
+      "name": "tutorial-writing",
+      "title": "教程编写",
+      "description": "编写循序渐进的教学内容。当需要带读者从零完成一个可运行成果时使用。",
+      "category": "writing",
+      "path": "skills/tutorial-writing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/tutorial-writing"
+    },
+    {
+      "id": "typography",
+      "name": "typography",
+      "title": "排版",
+      "description": "设置可读的字体与文本样式。当长文阅读疲劳、界面文字不协调时使用。",
+      "category": "design",
+      "path": "skills/typography/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/typography"
     },
     {
       "id": "ui-automation",
       "name": "ui-automation",
       "title": "界面自动化",
       "description": "通过可访问性树和语义操作自动化桌面/浏览器界面。当需要点击按钮、填表单、操作本地应用窗口、做 UI 回归验证，或只能用界面完成某步操作时使用。",
+      "category": "design",
       "path": "skills/ui-automation/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ui-automation"
+    },
+    {
+      "id": "ui-review",
+      "name": "ui-review",
+      "title": "界面评审",
+      "description": "评审界面实现的视觉与交互质量。当需要判断“做得对不对、好不好用”时使用。",
+      "category": "design",
+      "path": "skills/ui-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ui-review"
+    },
+    {
+      "id": "unit-economics",
+      "name": "unit-economics",
+      "title": "单位经济模型",
+      "description": "判断单个客户或订单是否赚钱。当增长越快亏损越大时使用。",
+      "category": "business",
+      "path": "skills/unit-economics/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/unit-economics"
+    },
+    {
+      "id": "user-guide",
+      "name": "user-guide",
+      "title": "用户手册",
+      "description": "编写面向最终用户的操作手册。当产品需要自助上手、减少支持成本时使用。",
+      "category": "writing",
+      "path": "skills/user-guide/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/user-guide"
+    },
+    {
+      "id": "user-research",
+      "name": "user-research",
+      "title": "用户研究",
+      "description": "通过访谈与观察获取真实需求。当需要理解用户行为而非意见时使用。",
+      "category": "product",
+      "path": "skills/user-research/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/user-research"
+    },
+    {
+      "id": "ux-audit",
+      "name": "ux-audit",
+      "title": "体验审计",
+      "description": "系统评估一个流程的可用性。当转化低、用户抱怨“难用”时使用。",
+      "category": "design",
+      "path": "skills/ux-audit/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ux-audit"
+    },
+    {
+      "id": "vendor-assessment",
+      "name": "vendor-assessment",
+      "title": "供应商评估",
+      "description": "在采购前评估供应商风险。当需要引入外部服务处理业务或数据时使用。",
+      "category": "legal",
+      "path": "skills/vendor-assessment/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/vendor-assessment"
     },
     {
       "id": "verification-gate",
       "name": "verification-gate",
       "title": "验证门禁",
       "description": "在交付前自动探测项目类型并运行对应验证（测试、类型检查、lint、构建），把结果作为可检查的证据。当需要确认改动是否可交付、跑一遍检查、判断任务是否真的完成、为交付补充验证证据时使用。",
+      "category": "quality",
       "path": "skills/verification-gate/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/verification-gate"
+    },
+    {
+      "id": "video-script",
+      "name": "video-script",
+      "title": "视频脚本",
+      "description": "撰写视频的分镜与口播内容。当需要制作教程、演示或宣传视频时使用。",
+      "category": "content",
+      "path": "skills/video-script/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/video-script"
+    },
+    {
+      "id": "visual-hierarchy",
+      "name": "visual-hierarchy",
+      "title": "视觉层级",
+      "description": "让界面一眼看出主次。当信息拥挤、用户找不到重点时使用。",
+      "category": "design",
+      "path": "skills/visual-hierarchy/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/visual-hierarchy"
+    },
+    {
+      "id": "webhook-design",
+      "name": "webhook-design",
+      "title": "Webhook 设计",
+      "description": "设计或接入事件回调。当系统之间需要异步通知时使用。",
+      "category": "automation",
+      "path": "skills/webhook-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/webhook-design"
+    },
+    {
+      "id": "weekly-review",
+      "name": "weekly-review",
+      "title": "每周复盘",
+      "description": "定期回顾进展并调整方向。当需要避免忙碌但偏离目标时使用。",
+      "category": "personal",
+      "path": "skills/weekly-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/weekly-review"
+    },
+    {
+      "id": "wireframing",
+      "name": "wireframing",
+      "title": "线框设计",
+      "description": "用低保真方式快速表达结构。当需要在投入视觉前对齐信息架构时使用。",
+      "category": "design",
+      "path": "skills/wireframing/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/wireframing"
+    },
+    {
+      "id": "workflow-automation",
+      "name": "workflow-automation",
+      "title": "流程自动化",
+      "description": "把重复的人工流程改造成自动执行。当同一套操作每周重复、容易出错时使用。",
+      "category": "automation",
+      "path": "skills/workflow-automation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/workflow-automation"
     },
     {
       "id": "worktree-isolation",
       "name": "worktree-isolation",
       "title": "工作树隔离",
       "description": "用独立工作树隔离并行改动，避免互相污染。当需要同时处理多个任务、让多个执行者并行改同一仓库、或要把实验性改动与主分支隔开时使用。",
+      "category": "engineering",
       "path": "skills/worktree-isolation/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/worktree-isolation"
     }

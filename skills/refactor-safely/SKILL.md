@@ -1,6 +1,7 @@
 ---
 name: refactor-safely
 description: 在不改变外部行为的前提下安全重构。当需要整理重复代码、拆分过长函数、替换实现、迁移模块结构，且必须保持现有行为与测试通过时使用。
+category: engineering
 ---
 
 # 安全重构

@@ -1,6 +1,7 @@
 ---
 name: incident-response
 description: 处理线上故障。当服务不可用、错误率升高、数据异常、或需要快速止血并复盘时使用。先恢复服务，再定位根因。
+category: operations
 ---
 
 # 线上故障响应

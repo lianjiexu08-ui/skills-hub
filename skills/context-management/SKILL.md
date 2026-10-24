@@ -1,6 +1,7 @@
 ---
 name: context-management
 description: 在长任务中保持上下文连贯。当任务跨越很多轮、上下文接近上限、需要中断后恢复、或要把工作交接给新的执行者时使用。
+category: ai
 ---
 
 # 长任务上下文管理

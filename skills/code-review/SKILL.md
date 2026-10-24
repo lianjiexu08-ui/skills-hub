@@ -1,6 +1,7 @@
 ---
 name: code-review
 description: 审查代码改动，发现问题并给出分级建议。当需要审查 diff、复核提交、检查有没有问题、PR 评审、修完后再看一遍，或涉及安全/并发/数据库/公共 API 等高风险改动时使用。
+category: engineering
 ---
 
 # 代码审查

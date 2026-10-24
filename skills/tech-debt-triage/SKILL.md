@@ -1,6 +1,7 @@
 ---
 name: tech-debt-triage
 description: 识别并排序技术债。当需要判断哪些债该先还、是否值得重构、如何在不影响交付的前提下改进，或需要为技术债争取排期时使用。
+category: engineering
 ---
 
 # 技术债分级

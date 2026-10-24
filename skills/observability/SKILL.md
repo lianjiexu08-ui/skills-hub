@@ -1,6 +1,7 @@
 ---
 name: observability
 description: 为代码补充可观测性（日志、指标、追踪）。当需要排查线上问题、给新功能加埋点、设计告警、或判断"出了问题能不能查出来"时使用。
+category: operations
 ---
 
 # 可观测性

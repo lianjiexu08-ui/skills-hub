@@ -1,6 +1,7 @@
 ---
 name: integration-debugging
 description: 排查与第三方服务对接的问题（HTTP API、Webhook、OAuth、消息队列、SDK）。当出现认证失败、超时、签名不匹配、回调丢失、字段对不上时使用。
+category: engineering
 ---
 
 # 外部集成排查

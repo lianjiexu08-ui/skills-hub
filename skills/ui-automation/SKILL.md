@@ -1,6 +1,7 @@
 ---
 name: ui-automation
 description: 通过可访问性树和语义操作自动化桌面/浏览器界面。当需要点击按钮、填表单、操作本地应用窗口、做 UI 回归验证，或只能用界面完成某步操作时使用。
+category: design
 ---
 
 # 界面自动化

@@ -1,6 +1,7 @@
 ---
 name: disposable-workspace
 description: 为单个任务创建一次性、可丢弃的执行环境。当任务需要隔离依赖、避免污染主环境、并行跑互不干扰的验证，或需要可复现的干净环境时使用。
+category: operations
 ---
 
 # 一次性执行环境

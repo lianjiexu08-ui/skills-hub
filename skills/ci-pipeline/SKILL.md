@@ -1,6 +1,7 @@
 ---
 name: ci-pipeline
 description: 设计或排查持续集成流水线。当需要新增检查阶段、解决"本地通过 CI 失败"、优化流水线耗时、或判断该在 CI 里跑什么时使用。
+category: operations
 ---
 
 # 持续集成流水线

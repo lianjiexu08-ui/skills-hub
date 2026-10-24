@@ -1,6 +1,7 @@
 ---
 name: external-publishing
 description: 把产物发布到外部可见的位置（分享链接、公共页面、制品库）。当需要发布报告、演示页、构建产物，或需要判断"这个动作能不能自动做"时使用。
+category: operations
 ---
 
 # 对外发布

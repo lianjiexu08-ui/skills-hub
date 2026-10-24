@@ -60,6 +60,22 @@
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/dependency-audit"
     },
     {
+      "id": "device-automation",
+      "name": "device-automation",
+      "title": "设备自动化",
+      "description": "自动化移动设备或模拟器做功能验证。当需要点击、滑动、输入、安装应用、授予权限、截图或读取界面结构来验证移动端行为时使用。",
+      "path": "skills/device-automation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/device-automation"
+    },
+    {
+      "id": "disposable-workspace",
+      "name": "disposable-workspace",
+      "title": "一次性执行环境",
+      "description": "为单个任务创建一次性、可丢弃的执行环境。当任务需要隔离依赖、避免污染主环境、并行跑互不干扰的验证，或需要可复现的干净环境时使用。",
+      "path": "skills/disposable-workspace/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/disposable-workspace"
+    },
+    {
       "id": "engineering-workflow",
       "name": "engineering-workflow",
       "title": "工程交付流程",
@@ -74,6 +90,14 @@
       "description": "编写任务交接说明，让别人或下一个执行者能接着干。当需要中断任务、转交他人、跨团队协作、或恢复一个中断的执行时使用。",
       "path": "skills/handoff-note/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/handoff-note"
+    },
+    {
+      "id": "issue-tracker-workflow",
+      "name": "issue-tracker-workflow",
+      "title": "工单驱动的工作流",
+      "description": "围绕工单/任务卡系统开展工作。当任务关联了工单、需要读取工单上下文、更新状态、写完成说明、或把发现的问题登记为后续工单时使用。",
+      "path": "skills/issue-tracker-workflow/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/issue-tracker-workflow"
     },
     {
       "id": "performance-review",
@@ -143,7 +167,7 @@
       "id": "task-orchestration",
       "name": "task-orchestration",
       "title": "任务编排",
-      "description": "结构化地协调多个执行者完成一个目标：拆分任务、建立依赖、分派、跟踪进度、处理阻塞与升级。当需要把大目标拆成可并行/有序的子任务、等待他人产出、处理失败重试、或判断何时该升级给人工时使用。",
+      "description": "结构化地协调多个执行者完成一个目标：区分交接与受控分派、拆分任务、建立依赖、跟踪状态、处理阻塞与升级。当需要把大目标拆给多个执行者、等待他人产出、处理失败重试、或判断何时该升级给人工时使用。",
       "path": "skills/task-orchestration/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/task-orchestration"
     },
@@ -162,6 +186,14 @@
       "description": "为改动设计有效测试。当需要补测试、判断测试是否充分、修复后防止回归、或审查改动缺少覆盖时使用。覆盖正常路径、边界、错误路径和回归点。",
       "path": "skills/test-design/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/test-design"
+    },
+    {
+      "id": "ui-automation",
+      "name": "ui-automation",
+      "title": "界面自动化",
+      "description": "通过可访问性树和语义操作自动化桌面/浏览器界面。当需要点击按钮、填表单、操作本地应用窗口、做 UI 回归验证，或只能用界面完成某步操作时使用。",
+      "path": "skills/ui-automation/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ui-automation"
     },
     {
       "id": "verification-gate",

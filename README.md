@@ -67,9 +67,18 @@ docs/skill-schema.md         SKILL.md 编写规范
 | `release-readiness` | 发布就绪检查 | 变更、证据、兼容、回滚的发布前核对 |
 | `pr-description` | 变更说明 | 让审查者快速理解改了什么与为什么 |
 | `handoff-note` | 交接说明 | 让下一个人无需追问就能接着干 |
-| `task-orchestration` | 任务编排 | 依赖、分派、阻塞、升级、收尾 |
+| `task-orchestration` | 任务编排 | 交接 vs 受控分派、依赖、决策门、升级 |
 | `project-map` | 项目地图 | 三步阅读法建立可共享的项目认知 |
+| `issue-tracker-workflow` | 工单驱动的工作流 | 读工单、状态流转、完成说明、未确认写入 |
 | `skill-authoring` | 编写 Skill | 新增或重构 Skill 的规范与自检 |
+
+### 环境与界面自动化
+
+| ID | 名称 | 用途 |
+| --- | --- | --- |
+| `disposable-workspace` | 一次性执行环境 | 三阶段快照、认证隔离、用完即弃 |
+| `ui-automation` | 界面自动化 | 可访问性树、语义动作、状态确认 |
+| `device-automation` | 设备自动化 | 归一化坐标、点按优先、设备清理 |
 
 ## 维护方式
 

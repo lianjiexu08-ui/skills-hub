@@ -77,8 +77,16 @@ docs/skill-schema.md         SKILL.md 编写规范
 | ID | 名称 | 用途 |
 | --- | --- | --- |
 | `disposable-workspace` | 一次性执行环境 | 三阶段快照、认证隔离、用完即弃 |
+| `worktree-isolation` | 工作树隔离 | 并行改动互不污染，基线选择与清理 |
+| `terminal-session` | 终端会话驱动 | 就绪等待、句柄失效、长输出分页 |
 | `ui-automation` | 界面自动化 | 可访问性树、语义动作、状态确认 |
 | `device-automation` | 设备自动化 | 归一化坐标、点按优先、设备清理 |
+
+### 对外动作
+
+| ID | 名称 | 用途 |
+| --- | --- | --- |
+| `external-publishing` | 对外发布 | 默认关闭、显式授权、可撤销与脱敏检查 |
 
 ## 维护方式
 

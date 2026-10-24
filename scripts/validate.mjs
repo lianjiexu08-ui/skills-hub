@@ -15,6 +15,13 @@ const skillsDir = path.join(root, 'skills');
 const catalogFile = path.join(root, 'catalog.json');
 const checkOnly = process.argv.includes('--check');
 
+const CATEGORY_LABELS = {
+  engineering: '工程开发', quality: '测试与质量', security: '安全与合规', operations: '运维与云',
+  data: '数据分析', ai: '数据与 AI 工程', design: '设计与前端', product: '产品', writing: '文档与写作',
+  research: '研究与信息', content: '内容与媒体', business: '商业与运营', finance: '财务',
+  legal: '法务与行政', collaboration: '项目与协作', personal: '个人效率', learning: '教学与学习',
+  automation: '自动化与集成', mobile: '移动与桌面', general: '其他',
+};
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const FORBIDDEN_TERMS = ['devagent'];
 
@@ -104,6 +111,7 @@ for (const name of fs.readdirSync(skillsDir).sort()) {
     title: heading ? heading.replace(/^#\s+/, '').trim() : name,
     description: String(data.description).replace(/\s+/g, ' ').trim(),
     category: typeof data.category === 'string' && data.category.trim() ? data.category.trim() : 'general',
+    categoryLabel: CATEGORY_LABELS[typeof data.category === 'string' ? data.category.trim() : 'general'] || '其他',
     path: `skills/${name}/SKILL.md`,
     installUrl: `https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/${name}`,
   });

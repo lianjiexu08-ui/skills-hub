@@ -4,6 +4,22 @@
   "installUrlTemplate": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/<id>",
   "skills": [
     {
+      "id": "adr",
+      "name": "adr",
+      "title": "架构决策记录",
+      "description": "记录架构决策（ADR）。当做出影响长期结构的选择、需要在多个方案间定夺、或要让后来者理解决策背景时使用。产出可追溯的决策记录。",
+      "path": "skills/adr/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/adr"
+    },
+    {
+      "id": "api-contract",
+      "name": "api-contract",
+      "title": "接口契约",
+      "description": "设计或修改对外接口契约。当新增接口、修改请求/响应格式、调整错误码、或需要保证向后兼容时使用。产出明确的输入输出约定与兼容策略。",
+      "path": "skills/api-contract/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/api-contract"
+    },
+    {
       "id": "bug-fix",
       "name": "bug-fix",
       "title": "缺陷修复",
@@ -28,12 +44,52 @@
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/code-review"
     },
     {
+      "id": "data-migration",
+      "name": "data-migration",
+      "title": "数据迁移",
+      "description": "安全地变更数据库结构或迁移数据。当需要加字段、改类型、拆表、回填数据、清理旧数据，或评估迁移的回滚与兼容性时使用。",
+      "path": "skills/data-migration/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/data-migration"
+    },
+    {
+      "id": "dependency-audit",
+      "name": "dependency-audit",
+      "title": "依赖评估",
+      "description": "评估引入、升级或移除依赖。当需要新增第三方库、升级版本、处理安全公告、或判断能否用现有代码替代时使用。",
+      "path": "skills/dependency-audit/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/dependency-audit"
+    },
+    {
       "id": "engineering-workflow",
       "name": "engineering-workflow",
       "title": "工程交付流程",
       "description": "工程交付五步法：需求理解、方案设计、代码实现、代码审查、缺陷修复。当需要实现功能、修改代码、交付可验证结果，或不知道从哪一步开始时使用；也用于判断当前任务处在哪一步、下一步该做什么。",
       "path": "skills/engineering-workflow/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/engineering-workflow"
+    },
+    {
+      "id": "handoff-note",
+      "name": "handoff-note",
+      "title": "交接说明",
+      "description": "编写任务交接说明，让别人或下一个执行者能接着干。当需要中断任务、转交他人、跨团队协作、或恢复一个中断的执行时使用。",
+      "path": "skills/handoff-note/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/handoff-note"
+    },
+    {
+      "id": "performance-review",
+      "name": "performance-review",
+      "title": "性能审查",
+      "description": "审查并改进代码性能。当出现响应慢、内存增长、批量操作变慢、数据库压力大，或改动涉及循环查询、大文件处理、并发时使用。",
+      "path": "skills/performance-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/performance-review"
+    },
+    {
+      "id": "pr-description",
+      "name": "pr-description",
+      "title": "变更说明",
+      "description": "撰写变更说明或合并请求描述。当需要为一次改动写 PR 描述、提交说明、交付说明，或让审查者快速理解改了什么与为什么时使用。",
+      "path": "skills/pr-description/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/pr-description"
     },
     {
       "id": "project-map",
@@ -44,12 +100,68 @@
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/project-map"
     },
     {
+      "id": "refactor-safely",
+      "name": "refactor-safely",
+      "title": "安全重构",
+      "description": "在不改变外部行为的前提下安全重构。当需要整理重复代码、拆分过长函数、替换实现、迁移模块结构，且必须保持现有行为与测试通过时使用。",
+      "path": "skills/refactor-safely/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/refactor-safely"
+    },
+    {
+      "id": "release-readiness",
+      "name": "release-readiness",
+      "title": "发布就绪检查",
+      "description": "发布前的交付检查。当准备合并、发版、上线，或需要确认\"是否真的可以交付\"时使用。核对变更范围、验证证据、兼容性、回滚方案与风险。",
+      "path": "skills/release-readiness/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/release-readiness"
+    },
+    {
+      "id": "requirement-analysis",
+      "name": "requirement-analysis",
+      "title": "需求澄清",
+      "description": "把模糊想法澄清成可验收的需求。当需求不清楚、验收标准缺失、用户只说\"做个 X\"、或需要在动手前确认范围与边界时使用。产出目标、范围、验收标准和待确认问题。",
+      "path": "skills/requirement-analysis/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/requirement-analysis"
+    },
+    {
+      "id": "security-review",
+      "name": "security-review",
+      "title": "安全审查",
+      "description": "审查代码的安全风险。当改动涉及认证授权、用户输入、文件与命令执行、外部请求、密钥处理、数据存储，或做发布前安全检查时使用。",
+      "path": "skills/security-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/security-review"
+    },
+    {
+      "id": "skill-authoring",
+      "name": "skill-authoring",
+      "title": "编写 Skill",
+      "description": "编写或修改 Agent Skill。当需要新增 Skill、重构已有 Skill、判断一个流程是否适合写成 Skill、或统一 Skill 写法时使用。",
+      "path": "skills/skill-authoring/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/skill-authoring"
+    },
+    {
       "id": "task-orchestration",
       "name": "task-orchestration",
       "title": "任务编排",
       "description": "结构化地协调多个执行者完成一个目标：拆分任务、建立依赖、分派、跟踪进度、处理阻塞与升级。当需要把大目标拆成可并行/有序的子任务、等待他人产出、处理失败重试、或判断何时该升级给人工时使用。",
       "path": "skills/task-orchestration/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/task-orchestration"
+    },
+    {
+      "id": "technical-design",
+      "name": "technical-design",
+      "title": "技术方案设计",
+      "description": "基于需求设计可落地的技术方案。当需求已清楚、需要确定模块划分、数据流、接口契约与关键权衡时使用；也用于比较多个方案、评估改动范围。",
+      "path": "skills/technical-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/technical-design"
+    },
+    {
+      "id": "test-design",
+      "name": "test-design",
+      "title": "测试设计",
+      "description": "为改动设计有效测试。当需要补测试、判断测试是否充分、修复后防止回归、或审查改动缺少覆盖时使用。覆盖正常路径、边界、错误路径和回归点。",
+      "path": "skills/test-design/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/test-design"
     },
     {
       "id": "verification-gate",

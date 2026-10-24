@@ -4,6 +4,14 @@
   "installUrlTemplate": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/<id>",
   "skills": [
     {
+      "id": "accessibility-review",
+      "name": "accessibility-review",
+      "title": "可访问性检查",
+      "description": "检查并改进界面可访问性。当需要支持键盘操作、屏幕阅读器、表单可用性，或做无障碍合规检查时使用。",
+      "path": "skills/accessibility-review/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/accessibility-review"
+    },
+    {
       "id": "adr",
       "name": "adr",
       "title": "架构决策记录",
@@ -18,6 +26,14 @@
       "description": "设计或修改对外接口契约。当新增接口、修改请求/响应格式、调整错误码、或需要保证向后兼容时使用。产出明确的输入输出约定与兼容策略。",
       "path": "skills/api-contract/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/api-contract"
+    },
+    {
+      "id": "browser-debugging",
+      "name": "browser-debugging",
+      "title": "前端问题排查",
+      "description": "排查前端页面问题（白屏、报错、请求失败、样式错乱、状态不对）。当需要复现前端 bug、定位是网络/脚本/样式/状态哪一层的问题时使用。",
+      "path": "skills/browser-debugging/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/browser-debugging"
     },
     {
       "id": "bug-fix",
@@ -36,12 +52,44 @@
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/change-impact"
     },
     {
+      "id": "ci-pipeline",
+      "name": "ci-pipeline",
+      "title": "持续集成流水线",
+      "description": "设计或排查持续集成流水线。当需要新增检查阶段、解决\"本地通过 CI 失败\"、优化流水线耗时、或判断该在 CI 里跑什么时使用。",
+      "path": "skills/ci-pipeline/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/ci-pipeline"
+    },
+    {
       "id": "code-review",
       "name": "code-review",
       "title": "代码审查",
       "description": "审查代码改动，发现问题并给出分级建议。当需要审查 diff、复核提交、检查有没有问题、PR 评审、修完后再看一遍，或涉及安全/并发/数据库/公共 API 等高风险改动时使用。",
       "path": "skills/code-review/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/code-review"
+    },
+    {
+      "id": "codebase-qa",
+      "name": "codebase-qa",
+      "title": "代码问答",
+      "description": "基于真实代码回答关于项目的问题。当被问到\"这个功能怎么实现的\"\"这段代码做什么\"\"在哪里处理 X\"\"为什么这样写\"时使用。回答必须给出文件与位置证据。",
+      "path": "skills/codebase-qa/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/codebase-qa"
+    },
+    {
+      "id": "config-management",
+      "name": "config-management",
+      "title": "配置管理",
+      "description": "管理应用配置与环境变量。当新增配置项、排查\"某环境行为不同\"、处理默认值与密钥、或需要保证配置错误时快速失败时使用。",
+      "path": "skills/config-management/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/config-management"
+    },
+    {
+      "id": "context-management",
+      "name": "context-management",
+      "title": "长任务上下文管理",
+      "description": "在长任务中保持上下文连贯。当任务跨越很多轮、上下文接近上限、需要中断后恢复、或要把工作交接给新的执行者时使用。",
+      "path": "skills/context-management/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/context-management"
     },
     {
       "id": "data-migration",
@@ -92,6 +140,14 @@
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/external-publishing"
     },
     {
+      "id": "flaky-test",
+      "name": "flaky-test",
+      "title": "不稳定测试",
+      "description": "诊断和修复不稳定的测试。当测试时过时不过、只在 CI 失败、并行时失败、或需要判断是否该隔离某个用例时使用。",
+      "path": "skills/flaky-test/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/flaky-test"
+    },
+    {
       "id": "handoff-note",
       "name": "handoff-note",
       "title": "交接说明",
@@ -100,12 +156,36 @@
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/handoff-note"
     },
     {
+      "id": "incident-response",
+      "name": "incident-response",
+      "title": "线上故障响应",
+      "description": "处理线上故障。当服务不可用、错误率升高、数据异常、或需要快速止血并复盘时使用。先恢复服务，再定位根因。",
+      "path": "skills/incident-response/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/incident-response"
+    },
+    {
+      "id": "integration-debugging",
+      "name": "integration-debugging",
+      "title": "外部集成排查",
+      "description": "排查与第三方服务对接的问题（HTTP API、Webhook、OAuth、消息队列、SDK）。当出现认证失败、超时、签名不匹配、回调丢失、字段对不上时使用。",
+      "path": "skills/integration-debugging/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/integration-debugging"
+    },
+    {
       "id": "issue-tracker-workflow",
       "name": "issue-tracker-workflow",
       "title": "工单驱动的工作流",
       "description": "围绕工单/任务卡系统开展工作。当任务关联了工单、需要读取工单上下文、更新状态、写完成说明、或把发现的问题登记为后续工单时使用。",
       "path": "skills/issue-tracker-workflow/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/issue-tracker-workflow"
+    },
+    {
+      "id": "observability",
+      "name": "observability",
+      "title": "可观测性",
+      "description": "为代码补充可观测性（日志、指标、追踪）。当需要排查线上问题、给新功能加埋点、设计告警、或判断\"出了问题能不能查出来\"时使用。",
+      "path": "skills/observability/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/observability"
     },
     {
       "id": "performance-review",
@@ -156,6 +236,14 @@
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/requirement-analysis"
     },
     {
+      "id": "secret-handling",
+      "name": "secret-handling",
+      "title": "凭据处理",
+      "description": "在代码与工作流中安全处理凭据。当需要接入 API 密钥、配置令牌、排查密钥泄漏、或审查日志与错误输出时使用。",
+      "path": "skills/secret-handling/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/secret-handling"
+    },
+    {
       "id": "security-review",
       "name": "security-review",
       "title": "安全审查",
@@ -178,6 +266,14 @@
       "description": "结构化地协调多个执行者完成一个目标：区分交接与受控分派、拆分任务、建立依赖、跟踪状态、处理阻塞与升级。当需要把大目标拆给多个执行者、等待他人产出、处理失败重试、或判断何时该升级给人工时使用。",
       "path": "skills/task-orchestration/SKILL.md",
       "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/task-orchestration"
+    },
+    {
+      "id": "tech-debt-triage",
+      "name": "tech-debt-triage",
+      "title": "技术债分级",
+      "description": "识别并排序技术债。当需要判断哪些债该先还、是否值得重构、如何在不影响交付的前提下改进，或需要为技术债争取排期时使用。",
+      "path": "skills/tech-debt-triage/SKILL.md",
+      "installUrl": "https://github.com/lianjiexu08-ui/skills-hub/tree/main/skills/tech-debt-triage"
     },
     {
       "id": "technical-design",

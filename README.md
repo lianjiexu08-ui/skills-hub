@@ -29,7 +29,7 @@ docs/skill-schema.md         SKILL.md 编写规范
 
 | ID | 名称 | 用途 |
 | --- | --- | --- |
-| `engineering-workflow` | 工程交付流程 | 需求理解 → 方案设计 → 实现 → 审查 → 修复的五步主流程 |
+| `engineering-workflow` | 工程交付流程 | 需求理解 → 方案设计 → 实现 → 审查 → 修复 |
 
 ### 需求与设计
 
@@ -46,19 +46,33 @@ docs/skill-schema.md         SKILL.md 编写规范
 | ID | 名称 | 用途 |
 | --- | --- | --- |
 | `code-review` | 代码审查 | 取证、预检门禁、分级审查报告 |
-| `bug-fix` | 缺陷修复 | 复现定位、多方案排序、逐个尝试成功即停 |
+| `bug-fix` | 缺陷修复 | 复现定位、多方案排序、成功即停 |
 | `refactor-safely` | 安全重构 | 行为不变前提下的小步重构 |
 | `test-design` | 测试设计 | 覆盖正常、边界、错误与回归点 |
-| `verification-gate` | 验证门禁 | 探测项目类型并自动跑测试/类型检查/lint/构建 |
+| `flaky-test` | 不稳定测试 | 分类定位并让测试确定化，不靠重试 |
+| `verification-gate` | 验证门禁 | 探测项目类型并跑测试/类型检查/lint/构建 |
 | `dependency-audit` | 依赖评估 | 引入、升级、移除依赖的判断依据 |
+| `tech-debt-triage` | 技术债分级 | 只记录有代价的债，按影响×频率排序 |
 
 ### 安全与性能
 
 | ID | 名称 | 用途 |
 | --- | --- | --- |
 | `security-review` | 安全审查 | 输入、执行、授权、凭据、网络风险 |
-| `performance-review` | 性能审查 | 先测量再优化，定位 N+1、内存、并发问题 |
-| `data-migration` | 数据迁移 | 分阶段、幂等、可回滚的数据结构变更 |
+| `secret-handling` | 凭据处理 | 密钥存放、脱敏输出、泄漏处置 |
+| `performance-review` | 性能审查 | 先测量再优化，定位 N+1、内存、并发 |
+| `data-migration` | 数据迁移 | 分阶段、幂等、可回滚的结构变更 |
+
+### 运维与故障
+
+| ID | 名称 | 用途 |
+| --- | --- | --- |
+| `observability` | 可观测性 | 日志、指标、追踪与告警设计 |
+| `incident-response` | 故障响应 | 先止血再定位，保留证据与复盘 |
+| `ci-pipeline` | 持续集成 | 阶段设计、可复现性、本地/CI 差异排查 |
+| `config-management` | 配置管理 | 优先级、启动校验、默认值安全 |
+| `integration-debugging` | 集成排查 | 按层排除外部 API/认证/回调问题 |
+| `browser-debugging` | 前端排查 | 控制台 → 网络 → 状态 → 样式 |
 
 ### 交付与协作
 
@@ -68,9 +82,10 @@ docs/skill-schema.md         SKILL.md 编写规范
 | `pr-description` | 变更说明 | 让审查者快速理解改了什么与为什么 |
 | `handoff-note` | 交接说明 | 让下一个人无需追问就能接着干 |
 | `task-orchestration` | 任务编排 | 交接 vs 受控分派、依赖、决策门、升级 |
+| `issue-tracker-workflow` | 工单驱动的工作流 | 读工单、状态流转、未确认写入 |
+| `context-management` | 长任务上下文 | 外部化状态、压缩前摘要、恢复交接 |
+| `codebase-qa` | 代码问答 | 基于真实代码回答，给出位置证据 |
 | `project-map` | 项目地图 | 三步阅读法建立可共享的项目认知 |
-| `issue-tracker-workflow` | 工单驱动的工作流 | 读工单、状态流转、完成说明、未确认写入 |
-| `skill-authoring` | 编写 Skill | 新增或重构 Skill 的规范与自检 |
 
 ### 环境与界面自动化
 
@@ -81,12 +96,14 @@ docs/skill-schema.md         SKILL.md 编写规范
 | `terminal-session` | 终端会话驱动 | 就绪等待、句柄失效、长输出分页 |
 | `ui-automation` | 界面自动化 | 可访问性树、语义动作、状态确认 |
 | `device-automation` | 设备自动化 | 归一化坐标、点按优先、设备清理 |
+| `accessibility-review` | 可访问性检查 | 语义结构、键盘可达、ARIA 纪律 |
 
-### 对外动作
+### 对外动作与元技能
 
 | ID | 名称 | 用途 |
 | --- | --- | --- |
-| `external-publishing` | 对外发布 | 默认关闭、显式授权、可撤销与脱敏检查 |
+| `external-publishing` | 对外发布 | 默认关闭、显式授权、可撤销与脱敏 |
+| `skill-authoring` | 编写 Skill | 新增或重构 Skill 的规范与自检 |
 
 ## 维护方式
 
